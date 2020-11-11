@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9AD41AFF-34A1-49B3-AEB0-D6786E2B8ADC/df/263a3b14/Loader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/90/e324beba/FlickerableLightController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D057B61D-5EAA-4A6B-B99A-1F4D43D36A84/81/55ba00ce/Map.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/f3/0f1ca579/Item.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2A86D6D-EF44-4423-94C0-2D863D7B1350/b5/5336566e/Door.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32471C5F-AA48-44BF-B118-8A9848502C3C/a2/d825ebdd/ConfigManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/af/06272e9d/Generator079.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/c7/cf635694/FlickerableLight.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B912851-6638-46A8-911B-DCCAAACA6667/da/b2a9605f/Map.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Bloodbath/Config.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Components/Infection.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/Commands/Bloodbath.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Commands/Outbreak.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Class1.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Queue.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Gamemode.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Config.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Update.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Commands/Juggernaut.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Help.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Help.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/List.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Queue.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Plugin.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/List.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Info.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Plugin.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/Plugin.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/Methods.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Config.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Config.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/Methods.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Class1.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/methods.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Plugin.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Methods.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Plugin.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Config.cs" />
+        <option value="$PROJECT_DIR$/Bloodbath/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Methods.cs" />
+        <option value="$PROJECT_DIR$/Juggernaut/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Commands/HideNSeek.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/Outbreak/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/HideNSeek/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/QueueHandler.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Remove.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Add.cs" />
+        <option value="$PROJECT_DIR$/GamemodeManager/Methods.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jkibk0Vf6cYj6gmevJXUpRz0NW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="0d570cb2-96df-43cc-80da-7f777e6d0afe" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="" />
+      <created>1604354565947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604354565947</updated>
+      <workItem from="1604354568834" duration="64000" />
+      <workItem from="1604354714260" duration="9694000" />
+      <workItem from="1604421419717" duration="5217000" />
+      <workItem from="1604490429840" duration="7974000" />
+      <workItem from="1604521273564" duration="4428000" />
+      <workItem from="1604625639676" duration="8314000" />
+      <workItem from="1604634262962" duration="977000" />
+      <workItem from="1604637599096" duration="2299000" />
+      <workItem from="1604670174589" duration="1469000" />
+      <workItem from="1604674947899" duration="5025000" />
+      <workItem from="1604777391956" duration="429000" />
+      <workItem from="1605122417783" duration="3250000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1604674668869">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604674668869" />
+    <state x="640" y="213" key="RiderGenerateDialog" timestamp="1604675801297">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="640" y="213" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604675801297" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1604355120367">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1604524075868">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1604524075868" />
+  </component>
+</project>
