@@ -364,3 +364,7 @@ FodyWeavers.xsd
 
 # NuGet
 NuGet.config
+/.idea/.idea.PscpGamemodes/.idea/.gitignore
+/.idea/.idea.PscpGamemodes/.idea/.name
+/.idea/.idea.PscpGamemodes/.idea/misc.xml
+/.idea/.idea.PscpGamemodes/.idea/vcs.xml
