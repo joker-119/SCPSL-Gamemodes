@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Shadow\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Shadow\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_PscpGamemodes.1808948425.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Shadow\RiderProjects\PscpGamemodes" t="IncludeFlat">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_PscpGamemodes.-1106390768.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Bloodbath" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Bloodbath.csproj" t="IncludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Bloodbath.cs" t="Include" />
@@ -15,15 +14,15 @@
         <e p="Config.cs" t="Include" />
         <e p="EventHandlers.cs" t="Include" />
         <e p="Methods.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
         <e p="Plugin.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
       </e>
       <e p="GamemodeManager" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Disable.cs" t="Include" />
           <e p="Enable.cs" t="Include" />
@@ -33,8 +32,6 @@
         <e p="Config.cs" t="Include" />
         <e p="GamemodeManager.csproj" t="IncludeRecursive" />
         <e p="Methods.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
         <e p="Plugin.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
@@ -51,9 +48,11 @@
           <e p="QueueHandler.cs" t="Include" />
         </e>
         <e p="ReflectionHelpers.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
       </e>
       <e p="HideNSeek" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Disable.cs" t="Include" />
           <e p="Enable.cs" t="Include" />
@@ -63,15 +62,15 @@
         <e p="EventHandlers.cs" t="Include" />
         <e p="HideNSeek.csproj" t="IncludeRecursive" />
         <e p="Methods.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
         <e p="Plugin.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
       </e>
       <e p="Juggernaut" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Disable.cs" t="Include" />
           <e p="Enable.cs" t="Include" />
@@ -81,15 +80,15 @@
         <e p="EventHandlers.cs" t="Include" />
         <e p="Juggernaut.csproj" t="IncludeRecursive" />
         <e p="Methods.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
-        <e p="packages.config" t="Include" />
         <e p="Plugin.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
       </e>
       <e p="Outbreak" t="IncludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
         <e p="Commands" t="Include">
           <e p="Disable.cs" t="Include" />
           <e p="Enable.cs" t="Include" />
@@ -101,15 +100,16 @@
         <e p="Config.cs" t="Include" />
         <e p="EventHandlers.cs" t="Include" />
         <e p="Methods.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive" />
         <e p="Outbreak.csproj" t="IncludeRecursive" />
         <e p="Plugin.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
       </e>
-      <e p="packages" t="ExcludeRecursive" />
       <e p="PscpGamemodes.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
