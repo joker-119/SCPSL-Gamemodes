@@ -20,35 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DodgeBall/DodgeBall.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DodgeBall/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DodgeBall/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gungame/Gungame.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gungame/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gungame/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutRun/PeanutRun.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutRun/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutRun/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShyInfection/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShyInfection/ShyInfection.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShyInfection/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/TeamDeathmatch.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Methods.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Plugin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloodbath/Bloodbath.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/Bloodbath.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloodbath/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/GamemodeManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/GamemodeManager.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HideNSeek/HideNSeek.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/HideNSeek.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HideNSeek/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Juggernaut/Juggernaut.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/Juggernaut.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Juggernaut/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/packages.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outbreak/Outbreak.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Outbreak.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloodbath/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloodbath/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/Methods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/Methods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/QueueHandler/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/QueueHandler/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/QueueHandler/QueueHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/QueueHandler/QueueHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HideNSeek/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HideNSeek/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/Methods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Juggernaut/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Juggernaut/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/Methods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outbreak/Components/Infection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Components/Infection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outbreak/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outbreak/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Methods.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PscpGamemodes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PscpGamemodes.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,22 +58,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Outbreak/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DodgeBall/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Juggernaut/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Juggernaut/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HideNSeek/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/Methods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/Commands/Outbreak.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Methods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Gamemode.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/Config.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Update.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" />
-        <option value="$PROJECT_DIR$/Juggernaut/Commands/Juggernaut.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Help.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Help.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/Commands/List.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Queue.cs" />
         <option value="$PROJECT_DIR$/Bloodbath/Commands/Disable.cs" />
@@ -124,11 +129,20 @@
         <option value="$PROJECT_DIR$/TeamDeathmatch/Class1.cs" />
         <option value="$PROJECT_DIR$/ShyInfection/Class1.cs" />
         <option value="$PROJECT_DIR$/Gungame/Class1.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Plugin.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Config.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Methods.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1jkibk0Vf6cYj6gmevJXUpRz0NW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -179,7 +193,7 @@
       <workItem from="1604777391956" duration="429000" />
       <workItem from="1605122417783" duration="3250000" />
       <workItem from="1605136029860" duration="201000" />
-      <workItem from="1605277648195" duration="308000" />
+      <workItem from="1605277648195" duration="2355000" />
     </task>
     <task id="LOCAL-00001" summary="shut">
       <created>1605136186605</created>
@@ -209,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605277952503</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding new projects. Updating Exiled NuGet">
+      <created>1605278058547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605278058547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,10 +274,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605277955422">
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605278059804">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605277955422" />
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605278059804" />
+    <state x="2065" y="1" width="1402" height="718" maximized="true" key="dock-window-1" timestamp="1605278475679">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2065" y="1" width="1402" height="718" maximized="true" key="dock-window-1/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605278475679" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1604524075868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

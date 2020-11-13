@@ -7,8 +7,8 @@ namespace Outbreak
 {
     public class Methods
     {
-        private readonly Plugin _plugin;
-        public Methods(Plugin plugin) => _plugin = plugin;
+        private readonly Plugin plugin;
+        public Methods(Plugin plugin) => this.plugin = plugin;
 
         public void SetupPlayers()
         {
@@ -22,14 +22,14 @@ namespace Outbreak
                 if (player.Team == Team.SCP)
                 {
                     counter++;
-                    if (counter >= _plugin.Config.MaxAlphaCount)
+                    if (counter >= plugin.Config.MaxAlphaCount)
                     {
                         player.Role = RoleType.ClassD;
                         continue;
                     }
 
                     player.SetRole(RoleType.Scp0492, true);
-                    Timing.CallDelayed(0.5f, () => player.Health = _plugin.Config.AlphaZombieHealth);
+                    Timing.CallDelayed(0.5f, () => player.Health = plugin.Config.AlphaZombieHealth);
                 }
         }
         
@@ -38,20 +38,20 @@ namespace Outbreak
             switch (disable)
             {
                 case true:
-                    Exiled.Events.Handlers.Player.InteractingDoor -= _plugin.EventHandlers.OnDoorInteraction;
-                    Exiled.Events.Handlers.Server.RoundStarted -= _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded -= _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Hurting -= _plugin.EventHandlers.OnPlayerHurt;
-                    Exiled.Events.Handlers.Player.Joined -= _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died -= _plugin.EventHandlers.OnPlayerDeath;
+                    Exiled.Events.Handlers.Player.InteractingDoor -= plugin.EventHandlers.OnDoorInteraction;
+                    Exiled.Events.Handlers.Server.RoundStarted -= plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded -= plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Hurting -= plugin.EventHandlers.OnPlayerHurt;
+                    Exiled.Events.Handlers.Player.Joined -= plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died -= plugin.EventHandlers.OnPlayerDeath;
                     break;
                 case false:
-                    Exiled.Events.Handlers.Player.InteractingDoor += _plugin.EventHandlers.OnDoorInteraction;
-                    Exiled.Events.Handlers.Server.RoundStarted += _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded += _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Hurting += _plugin.EventHandlers.OnPlayerHurt;
-                    Exiled.Events.Handlers.Player.Joined += _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died += _plugin.EventHandlers.OnPlayerDeath;
+                    Exiled.Events.Handlers.Player.InteractingDoor += plugin.EventHandlers.OnDoorInteraction;
+                    Exiled.Events.Handlers.Server.RoundStarted += plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded += plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Hurting += plugin.EventHandlers.OnPlayerHurt;
+                    Exiled.Events.Handlers.Player.Joined += plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died += plugin.EventHandlers.OnPlayerDeath;
                     break;
             }
         }
@@ -59,20 +59,20 @@ namespace Outbreak
         public void EnableGamemode(bool force = false)
         {
             if (!force)
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
             else
             {
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
                 SetupPlayers();
             }
 
-            _plugin.ShouldDisableNextRound = true;
+            plugin.ShouldDisableNextRound = true;
         }
 
         public void DisableGamemode(bool force = false)
         {
             if (!force)
-                _plugin.ShouldDisableNextRound = true;
+                plugin.ShouldDisableNextRound = true;
             else
             {
                 List<RoleType> scpRoles = new List<RoleType>
@@ -90,11 +90,11 @@ namespace Outbreak
                 {
                     if (player.Role == RoleType.Scp173)
                     {
-                        player.Role = scpRoles[_plugin.Rng.Next(scpRoles.Count)];
+                        player.Role = scpRoles[plugin.Rng.Next(scpRoles.Count)];
                     }
                     else
                     {
-                        int r = _plugin.Rng.Next(6);
+                        int r = plugin.Rng.Next(6);
                         switch (r)
                         {
                             case 6:
@@ -130,10 +130,10 @@ namespace Outbreak
                 }
             }
 
-            if (string.IsNullOrEmpty(_plugin.Config.EndRoundBroadcast) || _plugin.Config.EndRoundBroadcastDur <= 0) 
+            if (string.IsNullOrEmpty(plugin.Config.EndRoundBroadcast) || plugin.Config.EndRoundBroadcastDur <= 0) 
                 return;
             Map.ClearBroadcasts();
-            Map.Broadcast(_plugin.Config.EndRoundBroadcastDur, _plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
+            Map.Broadcast(plugin.Config.EndRoundBroadcastDur, plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
         }
     }
 }

@@ -6,12 +6,12 @@ namespace GamemodeManager.QueueHandler
 {
     public class QueueHandler
     {
-        private readonly Plugin _plugin;
+        private readonly Plugin plugin;
 
         public EventHandlers EventHandlers;
         public QueueHandler(Plugin plugin)
         {
-            _plugin = plugin;
+            this.plugin = plugin;
             EventHandlers = new EventHandlers(this);
             RegisterEventHandlers();
         }
@@ -22,7 +22,7 @@ namespace GamemodeManager.QueueHandler
         {
             get
             {
-                foreach (IPlugin<IConfig> plugin in _plugin.LoadedGamemodes.Keys)
+                foreach (IPlugin<IConfig> plugin in plugin.LoadedGamemodes.Keys)
                     if ((bool) plugin.GetInstanceField("IsEnabled"))
                         return true;
                 return false;

@@ -16,8 +16,8 @@ namespace GamemodeManager
 {
     public class Methods
     {
-        private readonly Plugin _plugin;
-        public Methods(Plugin plugin) => _plugin = plugin;
+        private readonly Plugin plugin;
+        public Methods(Plugin plugin) => this.plugin = plugin;
 
         public bool IsGamemodeEnabled(IPlugin<IConfig> plugin) => (bool) plugin.GetInstanceField("IsEnabled");
 
@@ -27,10 +27,10 @@ namespace GamemodeManager
         {
             try
             {
-                Log.Debug($"{plugin.Name} enable command run.", _plugin.Config.Debug);
-                _plugin.GamemodeEnableCommands[plugin]
+                Log.Debug($"{plugin.Name} enable command run.", this.plugin.Config.Debug);
+                this.plugin.GamemodeEnableCommands[plugin]
                     .Execute(new ArraySegment<string>(new[] {"enable", extraArgs, force ? "force" : string.Empty}), sender ?? Server.Host.Sender, out response);
-                Log.Debug($"{plugin.Name} Enable: {response}", _plugin.Config.Debug);
+                Log.Debug($"{plugin.Name} Enable: {response}", this.plugin.Config.Debug);
             }
             catch (Exception e)
             {
@@ -46,11 +46,11 @@ namespace GamemodeManager
         {
             try
             {
-                Log.Debug($"{plugin.Name} disable command run.", _plugin.Config.Debug);
-                _plugin.GamemodeEnableCommands[plugin]
+                Log.Debug($"{plugin.Name} disable command run.", this.plugin.Config.Debug);
+                this.plugin.GamemodeEnableCommands[plugin]
                     .Execute(new ArraySegment<string>(new[] {"disable", force ? "force" : string.Empty}),
                         sender ?? Server.Host.Sender, out response);
-                Log.Debug($"{plugin.Name} Disable: {response}", _plugin.Config.Debug);
+                Log.Debug($"{plugin.Name} Disable: {response}", this.plugin.Config.Debug);
             }
             catch (Exception e)
             {
@@ -66,14 +66,14 @@ namespace GamemodeManager
         {
             Log.Info("Loading gamemode plugins...");
             
-            foreach (string gamemode in Directory.GetFiles(_plugin.Config.GamemodeDirectory))
+            foreach (string gamemode in Directory.GetFiles(plugin.Config.GamemodeDirectory))
             {
                 if (!gamemode.EndsWith(".dll"))
                     continue;
                 
                 IPlugin<IConfig> gamemodePlugin = Loader.CreatePlugin(Loader.LoadAssembly(gamemode));
-                if (!_plugin.LoadedGamemodes.ContainsKey(gamemodePlugin))
-                    _plugin.LoadedGamemodes.Add(gamemodePlugin, new List<ICommand>());
+                if (!plugin.LoadedGamemodes.ContainsKey(gamemodePlugin))
+                    plugin.LoadedGamemodes.Add(gamemodePlugin, new List<ICommand>());
                 else
                     Log.Warn($"LOADED TWO OF THE SAME GAMEMODE: {gamemodePlugin.Name}! THIS WILL CAUSE ISSUES UNLESS YOU KNOW WHAT YOU ARE DOING AND THIS IS INTENTIONAL!");
                 
@@ -82,10 +82,10 @@ namespace GamemodeManager
                 
                 foreach (ICommand command in gamemodePlugin.Commands.Values.SelectMany(dict => dict.Values))
                 {
-                    if (_plugin.LoadedGamemodes[gamemodePlugin].Contains(command))
-                        _plugin.LoadedGamemodes[gamemodePlugin].Add(command);
-                    if (!_plugin.GamemodeEnableCommands.ContainsKey(gamemodePlugin))
-                        _plugin.GamemodeEnableCommands.Add(gamemodePlugin, command);
+                    if (plugin.LoadedGamemodes[gamemodePlugin].Contains(command))
+                        plugin.LoadedGamemodes[gamemodePlugin].Add(command);
+                    if (!plugin.GamemodeEnableCommands.ContainsKey(gamemodePlugin))
+                        plugin.GamemodeEnableCommands.Add(gamemodePlugin, command);
                 }
                 
                 Log.Info($"Loaded {gamemodePlugin.Name}.");
@@ -117,7 +117,7 @@ namespace GamemodeManager
         {
             try
             {
-                File.WriteAllText(Path.Combine(_plugin.Config.GamemodeDirectory, "configs.yml"), configs ?? string.Empty);
+                File.WriteAllText(Path.Combine(plugin.Config.GamemodeDirectory, "configs.yml"), configs ?? string.Empty);
 
                 return true;
             }
@@ -133,8 +133,8 @@ namespace GamemodeManager
         {
             try
             {
-                if (File.Exists(Path.Combine(_plugin.Config.GamemodeDirectory, "configs.yml")))
-                    return File.ReadAllText(Path.Combine(_plugin.Config.GamemodeDirectory, "configs.yml"));
+                if (File.Exists(Path.Combine(plugin.Config.GamemodeDirectory, "configs.yml")))
+                    return File.ReadAllText(Path.Combine(plugin.Config.GamemodeDirectory, "configs.yml"));
             }
             catch (Exception exception)
             {

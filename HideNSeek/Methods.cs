@@ -7,8 +7,8 @@ namespace HideNSeek
 {
     public class Methods
     {
-        private readonly Plugin _plugin;
-        public Methods(Plugin plugin) => _plugin = plugin;
+        private readonly Plugin plugin;
+        public Methods(Plugin plugin) => this.plugin = plugin;
 
         public void SetupPlayers(RoleType scpRole)
         {
@@ -35,12 +35,12 @@ namespace HideNSeek
                     switch (scpRole)
                     {
                         case RoleType.Scp049:
-                            if (counter >= _plugin.Config.Max049Count)
+                            if (counter >= plugin.Config.Max049Count)
                                 Timing.RunCoroutine(SetHuman(player));
                             continue;
                         case RoleType.Scp93953:
                         case RoleType.Scp93989:
-                            if (counter >= _plugin.Config.Max939Count)
+                            if (counter >= plugin.Config.Max939Count)
                                 Timing.RunCoroutine(SetHuman(player));
                             continue;
                     }
@@ -75,20 +75,20 @@ namespace HideNSeek
         public void EnableGamemode(RoleType scpRole, bool force = false)
         {
             if (!force)
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
             else
             {
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
                 SetupPlayers(scpRole);
             }
 
-            _plugin.ShouldDisableNextRound = true;
+            plugin.ShouldDisableNextRound = true;
         }
         
         public void DisableGamemode(bool force = false)
         {
             if (!force)
-                _plugin.ShouldDisableNextRound = true;
+                plugin.ShouldDisableNextRound = true;
             else
             {
                 List<RoleType> scpRoles = new List<RoleType>
@@ -106,11 +106,11 @@ namespace HideNSeek
                 {
                     if (player.Role == RoleType.Scp173)
                     {
-                        player.Role = scpRoles[_plugin.Rng.Next(scpRoles.Count)];
+                        player.Role = scpRoles[plugin.Rng.Next(scpRoles.Count)];
                     }
                     else
                     {
-                        int r = _plugin.Rng.Next(6);
+                        int r = plugin.Rng.Next(6);
                         switch (r)
                         {
                             case 6:
@@ -146,10 +146,10 @@ namespace HideNSeek
                 }
             }
 
-            if (string.IsNullOrEmpty(_plugin.Config.EndRoundBroadcast) || _plugin.Config.EndRoundBroadcastDur <= 0) 
+            if (string.IsNullOrEmpty(plugin.Config.EndRoundBroadcast) || plugin.Config.EndRoundBroadcastDur <= 0) 
                 return;
             Map.ClearBroadcasts();
-            Map.Broadcast(_plugin.Config.EndRoundBroadcastDur, _plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
+            Map.Broadcast(plugin.Config.EndRoundBroadcastDur, plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
         }
         
         public void RegisterEvents(bool disable = false)
@@ -157,16 +157,16 @@ namespace HideNSeek
             switch (disable)
             {
                 case true:
-                    Exiled.Events.Handlers.Server.RoundStarted -= _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded -= _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Joined -= _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died -= _plugin.EventHandlers.OnDeath;
+                    Exiled.Events.Handlers.Server.RoundStarted -= plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded -= plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Joined -= plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died -= plugin.EventHandlers.OnDeath;
                     break;
                 case false:
-                    Exiled.Events.Handlers.Server.RoundStarted += _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded += _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Joined += _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died += _plugin.EventHandlers.OnDeath;
+                    Exiled.Events.Handlers.Server.RoundStarted += plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded += plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Joined += plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died += plugin.EventHandlers.OnDeath;
                     break;
             }
         }

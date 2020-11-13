@@ -7,40 +7,40 @@ namespace Outbreak
 {
     public class EventHandlers
     {
-        private readonly Plugin _plugin;
-        public EventHandlers(Plugin plugin) => _plugin = plugin;
+        private readonly Plugin plugin;
+        public EventHandlers(Plugin plugin) => this.plugin = plugin;
 
         public void OnRoundStart()
         {
-            if (!_plugin.IsEnabled)
+            if (!plugin.IsEnabled)
                 return;
 
-            _plugin.IsRunning = true;
-            _plugin.Methods.SetupPlayers();
+            plugin.IsRunning = true;
+            plugin.Methods.SetupPlayers();
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)
         {
-            if (!_plugin.IsRunning)
+            if (!plugin.IsRunning)
                 return;
             
-            _plugin.IsRunning = false;
-            if (_plugin.ShouldDisableNextRound)
-                _plugin.IsEnabled = false;
+            plugin.IsRunning = false;
+            if (plugin.ShouldDisableNextRound)
+                plugin.IsEnabled = false;
         }
 
         public void OnPlayerHurt(HurtingEventArgs ev)
         {
-            if (!_plugin.IsRunning)
+            if (!plugin.IsRunning)
                 return;
             
-            if (ev.Attacker.Role == RoleType.Scp0492 && _plugin.Rng.Next(100) <= _plugin.Config.InfectionChance)
-                ev.Target.GameObject.AddComponent<Infection>().Attacker = ev.Attacker;
+            if (ev.Attacker.Role == RoleType.Scp0492 && plugin.Rng.Next(100) <= plugin.Config.InfectionChance)
+                ev.Target.GameObject.AddComponent<Infection>().attacker = ev.Attacker;
         }
 
         public void OnPlayerDeath(DiedEventArgs ev)
         {
-            if (!_plugin.IsRunning)
+            if (!plugin.IsRunning)
                 return;
 
             int counter = 0;
@@ -50,10 +50,10 @@ namespace Outbreak
             switch (counter)
             {
                 case 1:
-                    _plugin.Methods.EndRound();
+                    plugin.Methods.EndRound();
                     break;
                 default:
-                    if (ev.Target.Role != RoleType.Scp0492 && _plugin.Config.AllDeathsMakeZombies)
+                    if (ev.Target.Role != RoleType.Scp0492 && plugin.Config.AllDeathsMakeZombies)
                         Timing.CallDelayed(0.15f, () => ev.Target.Role = RoleType.Scp0492);
                     break;
             }
@@ -61,11 +61,11 @@ namespace Outbreak
 
         public void OnDoorInteraction(InteractingDoorEventArgs ev)
         {
-            if (!_plugin.IsRunning)
+            if (!plugin.IsRunning)
                 return;
             
-            if (ev.Door.locked && ev.Player.Role == RoleType.Scp0492 && _plugin.AlphaZombies.Contains(ev.Player) &&
-                _plugin.Config.AlphasBreakLockedDoors)
+            if (ev.Door.locked && ev.Player.Role == RoleType.Scp0492 && plugin.AlphaZombies.Contains(ev.Player) &&
+                plugin.Config.AlphasBreakLockedDoors)
             {
                 if (ev.Door.doorType == Door.DoorTypes.HeavyGate)
                     ev.Door.PryGate();
@@ -76,7 +76,7 @@ namespace Outbreak
         
         public void OnPlayerJoin(JoinedEventArgs ev)
         {
-            if (_plugin.IsRunning || _plugin.IsEnabled && !Round.IsStarted)
+            if (plugin.IsRunning || plugin.IsEnabled && !Round.IsStarted)
                 ev.Player.Broadcast(5, $"Welcome to the <color=orange>{GetType().Namespace}</color>!");
         }
     }

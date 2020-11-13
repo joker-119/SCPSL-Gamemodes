@@ -8,20 +8,20 @@ namespace Bloodbath
 {
     public class Methods
     {
-        private readonly Plugin _plugin;
-        public Methods(Plugin plugin) => this._plugin = plugin;
+        private readonly Plugin plugin;
+        public Methods(Plugin plugin) => this.plugin = plugin;
         
-        private List<Player> _scp173S = new List<Player>();
-        private Vector3 _spawnPoint = Vector3.zero;
+        private List<Player> scp173S = new List<Player>();
+        private Vector3 spawnPoint = Vector3.zero;
 
-        private int GetScpCount => (_plugin.Config.SmartScpSelection ? Player.List.Count() / 6 : _plugin.Config.MaxScpCount) < 1 ? 1 : _plugin.Config.SmartScpSelection ? Player.List.Count() / 6 : _plugin.Config.MaxScpCount;
+        private int GetScpCount => (plugin.Config.SmartScpSelection ? Player.List.Count() / 6 : plugin.Config.MaxScpCount) < 1 ? 1 : plugin.Config.SmartScpSelection ? Player.List.Count() / 6 : plugin.Config.MaxScpCount;
         private Vector3 GetSpawnPoint
         {
             get
             {
-                if (_spawnPoint == Vector3.zero)
-                    _spawnPoint = RoleType.Tutorial.GetRandomSpawnPoint();
-                return _spawnPoint;
+                if (spawnPoint == Vector3.zero)
+                    spawnPoint = RoleType.Tutorial.GetRandomSpawnPoint();
+                return spawnPoint;
             }
         }
 
@@ -30,7 +30,7 @@ namespace Bloodbath
             List<Player> players = Player.List.ToList();
             for (int i = 0; i < GetScpCount; i++)
             {
-                int r = _plugin.Rng.Next(players.Count);
+                int r = plugin.Rng.Next(players.Count);
                 Timing.RunCoroutine(MakeScp(players[r]));
                 players.Remove(players[r]);
             }
@@ -41,35 +41,35 @@ namespace Bloodbath
         
         public void EndRound()
         {
-            foreach (Player player in _scp173S) 
+            foreach (Player player in scp173S) 
                 player?.Kill();
 
             Player winner = Player.List.FirstOrDefault(p => p.Role == RoleType.ClassD);
 
 
-            if (string.IsNullOrEmpty(_plugin.Config.EndRoundBroadcast) || _plugin.Config.EndRoundBroadcastDur <= 0) 
+            if (string.IsNullOrEmpty(plugin.Config.EndRoundBroadcast) || plugin.Config.EndRoundBroadcastDur <= 0) 
                 return;
             Map.ClearBroadcasts();
-            Map.Broadcast(_plugin.Config.EndRoundBroadcastDur, _plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
+            Map.Broadcast(plugin.Config.EndRoundBroadcastDur, plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
         }
 
         public void EnableGamemode(bool force = false)
         {
             if (!force)
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
             else
             {
-                _plugin.IsEnabled = true;
+                plugin.IsEnabled = true;
                 SetupPlayers();
             }
 
-            _plugin.ShouldDisableNextRound = true;
+            plugin.ShouldDisableNextRound = true;
         }
 
         public void DisableGamemode(bool force = false)
         {
             if (!force)
-                _plugin.ShouldDisableNextRound = true;
+                plugin.ShouldDisableNextRound = true;
             else
             {
                 List<RoleType> scpRoles = new List<RoleType>
@@ -87,11 +87,11 @@ namespace Bloodbath
                 {
                     if (player.Role == RoleType.Scp173)
                     {
-                        player.Role = scpRoles[_plugin.Rng.Next(scpRoles.Count)];
+                        player.Role = scpRoles[plugin.Rng.Next(scpRoles.Count)];
                     }
                     else
                     {
-                        int r = _plugin.Rng.Next(6);
+                        int r = plugin.Rng.Next(6);
                         switch (r)
                         {
                             case 6:
@@ -133,16 +133,16 @@ namespace Bloodbath
             switch (disable)
             {
                 case true:
-                    Exiled.Events.Handlers.Server.RoundStarted -= _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded -= _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Joined -= _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died -= _plugin.EventHandlers.OnPlayerDeath;
+                    Exiled.Events.Handlers.Server.RoundStarted -= plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded -= plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Joined -= plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died -= plugin.EventHandlers.OnPlayerDeath;
                     break;
                 case false:
-                    Exiled.Events.Handlers.Server.RoundStarted += _plugin.EventHandlers.OnRoundStart;
-                    Exiled.Events.Handlers.Server.RoundEnded += _plugin.EventHandlers.OnRoundEnd;
-                    Exiled.Events.Handlers.Player.Joined += _plugin.EventHandlers.OnPlayerJoin;
-                    Exiled.Events.Handlers.Player.Died += _plugin.EventHandlers.OnPlayerDeath;
+                    Exiled.Events.Handlers.Server.RoundStarted += plugin.EventHandlers.OnRoundStart;
+                    Exiled.Events.Handlers.Server.RoundEnded += plugin.EventHandlers.OnRoundEnd;
+                    Exiled.Events.Handlers.Player.Joined += plugin.EventHandlers.OnPlayerJoin;
+                    Exiled.Events.Handlers.Player.Died += plugin.EventHandlers.OnPlayerDeath;
                     break;
             }
         }

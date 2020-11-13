@@ -7,14 +7,14 @@ namespace Outbreak.Components
 {
     public class Infection : MonoBehaviour
     {
-        public Player Attacker;
-        private Player _player;
-        private CoroutineHandle _infectionHandle;
+        public Player attacker;
+        private Player player;
+        private CoroutineHandle infectionHandle;
         
         private void Awake()
         {
-            _player = Player.Get(gameObject);
-            if (_player == null)
+            player = Player.Get(gameObject);
+            if (player == null)
             {
                 Log.Warn($"Player for new infection component is null?");
                 Destroy(this);
@@ -23,23 +23,23 @@ namespace Outbreak.Components
 
         private void Start()
         {
-            _infectionHandle = Timing.RunCoroutine(DoInfectionDamage());
+            infectionHandle = Timing.RunCoroutine(DoInfectionDamage());
         }
 
         private void OnDestroy()
         {
-            if (_infectionHandle.IsValid)
-                Timing.KillCoroutines(_infectionHandle);
+            if (infectionHandle.IsValid)
+                Timing.KillCoroutines(infectionHandle);
         }
 
         IEnumerator<float> DoInfectionDamage()
         {
             for (;;)
             {
-                if (_player.Role != RoleType.ClassD)
+                if (player.Role != RoleType.ClassD)
                     yield break;
 
-                _player.Hurt(3.5f, Attacker ?? _player, DamageTypes.Poison);
+                player.Hurt(3.5f, attacker ?? player, DamageTypes.Poison);
 
                 yield return Timing.WaitForSeconds(2.5f);
             }
