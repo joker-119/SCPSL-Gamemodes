@@ -364,4 +364,4 @@ FodyWeavers.xsd
 
 # NuGet
 NuGet.config
-/.idea/*
+.idea/*
