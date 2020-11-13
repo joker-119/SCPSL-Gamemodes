@@ -19,7 +19,38 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="" />
+    <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/DodgeBall/DodgeBall.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DodgeBall/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DodgeBall/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gungame/Gungame.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gungame/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gungame/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutInfection/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutRun/PeanutRun.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutRun/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PeanutRun/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShyInfection/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShyInfection/ShyInfection.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShyInfection/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/TeamDeathmatch.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloodbath/Bloodbath.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/Bloodbath.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloodbath/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/GamemodeManager.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/GamemodeManager.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamemodeManager/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HideNSeek/HideNSeek.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/HideNSeek.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HideNSeek/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Juggernaut/Juggernaut.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/Juggernaut.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Juggernaut/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/packages.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Outbreak/Outbreak.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Outbreak.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PscpGamemodes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PscpGamemodes.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,12 +71,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Bloodbath/Config.cs" />
-        <option value="$PROJECT_DIR$/Outbreak/Components/Infection.cs" />
-        <option value="$PROJECT_DIR$/Bloodbath/Commands/Bloodbath.cs" />
-        <option value="$PROJECT_DIR$/Outbreak/Commands/Outbreak.cs" />
-        <option value="$PROJECT_DIR$/Juggernaut/Class1.cs" />
-        <option value="$PROJECT_DIR$/GamemodeManager/Commands/Queue.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/Commands/Gamemode.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/Config.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Update.cs" />
@@ -91,6 +116,12 @@
         <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Remove.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/QueueHandler/Commands/Add.cs" />
         <option value="$PROJECT_DIR$/GamemodeManager/Methods.cs" />
+        <option value="$PROJECT_DIR$/PeanutRun/Class1.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Class1.cs" />
+        <option value="$PROJECT_DIR$/DodgeBall/Class1.cs" />
+        <option value="$PROJECT_DIR$/TeamDeathmatch/Class1.cs" />
+        <option value="$PROJECT_DIR$/ShyInfection/Class1.cs" />
+        <option value="$PROJECT_DIR$/Gungame/Class1.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="shut" />
-    <option name="LAST_COMMIT_MESSAGE" value="shut" />
+    <MESSAGE value="Adding new projects. Updating Exiled NuGet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new projects. Updating Exiled NuGet" />
   </component>
   <component name="WindowStateProjectService">
     <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl" timestamp="1605136079280">
