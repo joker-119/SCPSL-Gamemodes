@@ -64,6 +64,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/DodgeBall/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeamDeathmatch/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
@@ -177,6 +179,7 @@
       <workItem from="1604777391956" duration="429000" />
       <workItem from="1605122417783" duration="3250000" />
       <workItem from="1605136029860" duration="201000" />
+      <workItem from="1605277648195" duration="308000" />
     </task>
     <task id="LOCAL-00001" summary="shut">
       <created>1605136186605</created>
@@ -192,7 +195,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605136215654</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding new projects. Updating Exiled NuGet">
+      <created>1605277937853</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605277937853</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding new projects. Updating Exiled NuGet">
+      <created>1605277952503</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605277952503</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +227,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -222,10 +240,11 @@
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
     <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605136079280" />
-    <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1604674668869">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1605277755659">
+      <screen x="0" y="17" width="1920" height="1062" />
     </state>
     <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604674668869" />
+    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605277755659" />
     <state x="640" y="213" key="RiderGenerateDialog" timestamp="1604675801297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -234,10 +253,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605136216491">
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605277955422">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605136216491" />
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605277955422" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1604524075868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
