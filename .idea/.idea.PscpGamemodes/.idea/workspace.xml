@@ -20,30 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Methods.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PeanutInfection/Plugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloodbath/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloodbath/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Bloodbath/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/QueueHandler/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/QueueHandler/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/QueueHandler/QueueHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/QueueHandler/QueueHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamemodeManager/ReflectionHelpers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HideNSeek/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HideNSeek/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HideNSeek/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Juggernaut/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Juggernaut/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Juggernaut/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outbreak/Components/Infection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Components/Infection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outbreak/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/EventHandlers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Outbreak/Methods.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Outbreak/Methods.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PeanutInfection/PeanutInfection.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PscpGamemodes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PscpGamemodes.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PeanutInfection/Plugin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PeanutInfection/Plugin.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,10 +111,10 @@
         <option value="$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" />
-        <option value="$PROJECT_DIR$/PeanutInfection/Plugin.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Config.cs" />
-        <option value="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Methods.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Plugin.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" />
       </list>
     </option>
   </component>
@@ -152,7 +131,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$EXILED_REFERENCES$/UnityEngine.dll" />
-    <property name="settings.editor.selected.configurable" value="0d570cb2-96df-43cc-80da-7f777e6d0afe" />
+    <property name="settings.editor.selected.configurable" value="RiderCSharpFileTemplatesSettingsId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -193,7 +172,7 @@
       <workItem from="1604777391956" duration="429000" />
       <workItem from="1605122417783" duration="3250000" />
       <workItem from="1605136029860" duration="201000" />
-      <workItem from="1605277648195" duration="2355000" />
+      <workItem from="1605277648195" duration="3051000" />
     </task>
     <task id="LOCAL-00001" summary="shut">
       <created>1605136186605</created>
@@ -230,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605278058547</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding PeanutInfection">
+      <created>1605280022055</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605280022055</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +240,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="shut" />
     <MESSAGE value="Adding new projects. Updating Exiled NuGet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new projects. Updating Exiled NuGet" />
+    <MESSAGE value="Adding PeanutInfection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding PeanutInfection" />
   </component>
   <component name="WindowStateProjectService">
     <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl" timestamp="1605136079280">
@@ -270,14 +257,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="213" key="RiderGenerateDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604675801297" />
-    <state x="461" y="185" key="SettingsEditor" timestamp="1604355120367">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605278059804">
+    <state x="518" y="186" key="SettingsEditor" timestamp="1605280698736">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605278059804" />
+    <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
+    <state x="518" y="186" key="SettingsEditor/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605280698736" />
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605280024061">
+      <screen x="0" y="17" width="1920" height="1062" />
+    </state>
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605280024061" />
+    <state x="709" y="259" width="494" height="579" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605280416968">
+      <screen x="0" y="17" width="1920" height="1062" />
+    </state>
+    <state x="709" y="259" width="494" height="579" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605280416968" />
     <state x="2065" y="1" width="1402" height="718" maximized="true" key="dock-window-1" timestamp="1605278475679">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

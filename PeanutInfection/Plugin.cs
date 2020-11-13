@@ -28,11 +28,17 @@ namespace PeanutInfection
             Singleton = this;
             Methods = new Methods(this);
             EventHandlers = new EventHandlers(this);
+            
+            Methods.RegisterEvents();
+            
             base.OnEnabled();
         }
 
         public override void OnDisabled()
         {
+            Methods.RegisterEvents(true);
+            Methods = null;
+            EventHandlers = null;
             base.OnDisabled();
         }
     }

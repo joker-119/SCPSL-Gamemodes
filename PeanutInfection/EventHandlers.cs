@@ -2,8 +2,6 @@ using Exiled.API.Enums;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
 using MEC;
-using UnityEngine;
-using Utf8Json.Resolvers.Internal;
 
 namespace PeanutInfection
 {
