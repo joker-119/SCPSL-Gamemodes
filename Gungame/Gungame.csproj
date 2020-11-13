@@ -4,16 +4,16 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{439EB13E-AA2B-4A0D-84CA-90EB590A6185}</ProjectGuid>
+        <ProjectGuid>{214F8C6C-4D0E-4D74-926B-3EABAEBA39CD}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>Juggernaut</RootNamespace>
-        <AssemblyName>Juggernaut</AssemblyName>
+        <RootNamespace>Gungame</RootNamespace>
+        <AssemblyName>Gungame</AssemblyName>
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>x64</PlatformTarget>
+        <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
@@ -32,15 +32,6 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\Assembly-CSharp-Publicized.dll</HintPath>
-        </Reference>
-        <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\Assembly-CSharp-firstpass.dll</HintPath>
-        </Reference>
-        <Reference Include="CommandSystem.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\CommandSystem.Core.dll</HintPath>
-        </Reference>
         <Reference Include="Exiled.API, Version=2.1.15.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\packages\EXILED.2.1.15\lib\net472\Exiled.API.dll</HintPath>
           <Private>True</Private>
@@ -65,28 +56,12 @@
           <HintPath>..\packages\EXILED.2.1.15\lib\net472\Exiled.Updater.dll</HintPath>
           <Private>True</Private>
         </Reference>
-        <Reference Include="Mirror, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\Mirror.dll</HintPath>
-        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
-        <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\UnityEngine.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\References\UnityEngine.CoreModule.dll</HintPath>
-        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Commands\Disable.cs" />
-        <Compile Include="Commands\Enable.cs" />
-        <Compile Include="Commands\Juggernaut.cs" />
-        <Compile Include="Config.cs" />
-        <Compile Include="EventHandlers.cs" />
-        <Compile Include="Methods.cs" />
-        <Compile Include="Plugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

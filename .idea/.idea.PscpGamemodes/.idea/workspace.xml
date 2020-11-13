@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,19 +25,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileColors">
+    <fileColor scope="Local Unit Tests" color="#122325" />
+    <fileColor scope="Android Instrumented Tests" color="#122325" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9AD41AFF-34A1-49B3-AEB0-D6786E2B8ADC/df/263a3b14/Loader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/90/e324beba/FlickerableLightController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D057B61D-5EAA-4A6B-B99A-1F4D43D36A84/81/55ba00ce/Map.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/f3/0f1ca579/Item.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2A86D6D-EF44-4423-94C0-2D863D7B1350/b5/5336566e/Door.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/32471C5F-AA48-44BF-B118-8A9848502C3C/a2/d825ebdd/ConfigManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/af/06272e9d/Generator079.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/975AB83E-30D7-49C8-91D2-1C74C1082670/c7/cf635694/FlickerableLight.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6B912851-6638-46A8-911B-DCCAAACA6667/da/b2a9605f/Map.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,13 +95,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1jkibk0Vf6cYj6gmevJXUpRz0NW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$EXILED_REFERENCES$/UnityEngine.dll" />
     <property name="settings.editor.selected.configurable" value="0d570cb2-96df-43cc-80da-7f777e6d0afe" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -103,7 +122,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="" />
@@ -123,18 +145,51 @@
       <workItem from="1604674947899" duration="5025000" />
       <workItem from="1604777391956" duration="429000" />
       <workItem from="1605122417783" duration="3250000" />
+      <workItem from="1605136029860" duration="201000" />
     </task>
+    <task id="LOCAL-00001" summary="shut">
+      <created>1605136186605</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605136186605</updated>
+    </task>
+    <task id="LOCAL-00002" summary="shut">
+      <created>1605136215654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605136215654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="shut" />
+    <option name="LAST_COMMIT_MESSAGE" value="shut" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl" timestamp="1605136079280">
+      <screen x="0" y="17" width="1920" height="1062" />
+    </state>
+    <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605136079280" />
     <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size" timestamp="1604674668869">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -147,6 +202,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605136216491">
+      <screen x="0" y="17" width="1920" height="1062" />
+    </state>
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605136216491" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1604524075868">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
