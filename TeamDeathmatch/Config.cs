@@ -9,7 +9,7 @@ namespace TeamDeathmatch
     public class Config : IConfig
     {
         [Description("Whether or not this plugin is enabled.")]
-        public bool IsEnabled { get; set; }
+        public bool IsEnabled { get; set; } = true;
         
         public List<string> AdditionalItems { get; set; } = new List<string>();
         

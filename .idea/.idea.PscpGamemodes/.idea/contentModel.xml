@@ -176,7 +176,7 @@
         <e p="Commands" t="Include">
           <e p="Disable.cs" t="Include" />
           <e p="Enable.cs" t="Include" />
-          <e p="PeanutRun.cs" t="Include" />
+          <e p="TeamDeathmatch.cs" t="Include" />
         </e>
         <e p="Config.cs" t="Include" />
         <e p="EventHandlers.cs" t="Include" />
