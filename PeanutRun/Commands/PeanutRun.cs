@@ -1,13 +1,13 @@
 using System;
 using CommandSystem;
 
-namespace PeanutInfection.Commands
+namespace PeanutRun.Commands
 {
     [CommandHandler(typeof(RemoteAdminCommandHandler))]
     [CommandHandler(typeof(GameConsoleCommandHandler))]
-    public sealed class PeanutInfection : ParentCommand
+    public sealed class PeanutRun : ParentCommand
     {
-        public PeanutInfection() => LoadGeneratedCommands();
+        public PeanutRun() => LoadGeneratedCommands();
         
         public override void LoadGeneratedCommands()
         {
@@ -22,8 +22,8 @@ namespace PeanutInfection.Commands
             return false;
         }
 
-        public override string Command { get; } = "peanutinfection";
-        public override string[] Aliases { get; } = { "pinfect" };
+        public override string Command { get; } = "peanutrun";
+        public override string[] Aliases { get; } = { "prun" };
         public override string Description { get; } = string.Empty;
     }
 }
