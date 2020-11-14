@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9db6dddc-095c-44c9-96ed-91b3ad941881" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Commands/Disable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Commands/Enable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Commands/TeamDeathmatch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/EventHandlers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Methods.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TeamDeathmatch/Plugin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PscpGamemodes.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PscpGamemodes.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamDeathmatch/TeamDeathmatch.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TeamDeathmatch/TeamDeathmatch.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PscpGamemodes/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,42 +35,41 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Juggernaut/Config.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Juggernaut/Methods.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///EventHandlers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TeamDeathmatch/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HideNSeek/Config.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Bloodbath/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Bloodbath/Config.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Bloodbath/Methods.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Outbreak/Commands/Outbreak.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Outbreak/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Outbreak/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DodgeBall/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TimedDeathmatch/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Outbreak/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Outbreak/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Plugin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Juggernaut/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Juggernaut/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TeamDeathmatch/packages.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Methods.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HideNSeek/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Commands/Enable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamemodeManager/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Commands/Disable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutRun/Commands/PeanutRun.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Commands/Disable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Commands/TeamDeathmatch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Bloodbath/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TeamDeathmatch/Commands/Enable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/Commands/Outbreak.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Methods.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Config.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/PeanutInfection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Outbreak/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamemodeManager/Plugin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,8 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Juggernaut/Config.cs" />
-        <option value="$PROJECT_DIR$/Juggernaut/Methods.cs" />
         <option value="$PROJECT_DIR$/HideNSeek/Class1.cs" />
         <option value="$PROJECT_DIR$/HideNSeek/methods.cs" />
         <option value="$PROJECT_DIR$/Outbreak/Plugin.cs" />
@@ -119,11 +107,9 @@
         <option value="$PROJECT_DIR$/Gungame/Class1.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Commands/Enable.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Commands/Disable.cs" />
-        <option value="$PROJECT_DIR$/PeanutInfection/Config.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Methods.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/Plugin.cs" />
         <option value="$PROJECT_DIR$/PeanutInfection/EventHandlers.cs" />
-        <option value="$PROJECT_DIR$/PeanutRun/Config.cs" />
         <option value="$PROJECT_DIR$/PeanutRun/Plugin.cs" />
         <option value="$PROJECT_DIR$/PeanutRun/Commands/Disable.cs" />
         <option value="$PROJECT_DIR$/PeanutRun/Commands/Enable.cs" />
@@ -134,10 +120,14 @@
         <option value="$PROJECT_DIR$/PeanutRun/EventHandlers.cs" />
         <option value="$PROJECT_DIR$/TeamDeathmatch/Plugin.cs" />
         <option value="$PROJECT_DIR$/TeamDeathmatch/EventHandlers.cs" />
-        <option value="$PROJECT_DIR$/TeamDeathmatch/Config.cs" />
-        <option value="$PROJECT_DIR$/TeamDeathmatch/Methods.cs" />
         <option value="$PROJECT_DIR$/TeamDeathmatch/Commands/Disable.cs" />
         <option value="$PROJECT_DIR$/TeamDeathmatch/Commands/Enable.cs" />
+        <option value="$PROJECT_DIR$/TeamDeathmatch/Commands/TeamDeathmatch.cs" />
+        <option value="$PROJECT_DIR$/TeamDeathmatch/Config.cs" />
+        <option value="$PROJECT_DIR$/PeanutRun/Config.cs" />
+        <option value="$PROJECT_DIR$/PeanutInfection/Config.cs" />
+        <option value="$PROJECT_DIR$/TimedDeathmatch/Class1.cs" />
+        <option value="$PROJECT_DIR$/TeamDeathmatch/Methods.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +140,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -195,7 +186,9 @@
       <workItem from="1604777391956" duration="429000" />
       <workItem from="1605122417783" duration="3250000" />
       <workItem from="1605136029860" duration="201000" />
-      <workItem from="1605277648195" duration="4800000" />
+      <workItem from="1605277648195" duration="5666000" />
+      <workItem from="1605321498542" duration="707000" />
+      <workItem from="1605343773684" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="shut">
       <created>1605136186605</created>
@@ -260,7 +253,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605281786333</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adding TeamDeathmatch">
+      <created>1605282468872</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605282468872</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixing configs">
+      <created>1605282527376</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605282527376</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Adding new project (not built yet).&#10;Adding all references needed.">
+      <created>1605282680524</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605282680524</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +295,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="shut" />
     <MESSAGE value="Adding new projects. Updating Exiled NuGet" />
@@ -288,18 +303,21 @@
     <MESSAGE value="Small mistake" />
     <MESSAGE value="hm" />
     <MESSAGE value="Adding peanut Run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding peanut Run" />
+    <MESSAGE value="Adding TeamDeathmatch" />
+    <MESSAGE value="Fixing configs" />
+    <MESSAGE value="Adding new project (not built yet).&#10;Adding all references needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new project (not built yet).&#10;Adding all references needed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl" timestamp="1605136079280">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
     <state x="792" y="364" width="320" height="357" key="FileChooserDialogImpl/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605136079280" />
-    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1605277755659">
+    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size" timestamp="1605282606090">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
     <state x="552" y="272" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1604674668869" />
-    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605277755659" />
+    <state x="552" y="284" width="602" height="392" key="Rider.ProjectTemplateDialog.Size/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605282606090" />
     <state x="640" y="213" key="RiderGenerateDialog" timestamp="1604675801297">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -309,10 +327,10 @@
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1604355120367" />
     <state x="518" y="186" key="SettingsEditor/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605281284633" />
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605281787651">
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2" timestamp="1605282681642">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
-    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605281787651" />
+    <state x="655" y="343" width="602" height="411" key="Vcs.Push.Dialog.v2/0.17.1920.1062/1920.0.1920.1080@0.17.1920.1062" timestamp="1605282681642" />
     <state x="709" y="259" width="494" height="579" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605280416968">
       <screen x="0" y="17" width="1920" height="1062" />
     </state>
