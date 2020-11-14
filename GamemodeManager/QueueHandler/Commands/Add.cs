@@ -53,7 +53,7 @@ namespace GamemodeManager.QueueHandlerCommands
             
             Plugin.Singleton.QueueHandler.AddToQueue(plugin, roundCount, extra);
 
-            response = $"{plugin.Name} has been added to the queue for {roundCount+1} rounds.";
+            response = $"{plugin.Name} has been added to the queue for {roundCount} rounds.";
             
             return true;
         }
