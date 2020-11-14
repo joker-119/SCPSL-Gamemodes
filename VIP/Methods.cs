@@ -41,7 +41,7 @@ namespace VIP
 
             plugin.VIP = Player.List.ElementAt(r);
 
-            int spawns = (int)(playerCount * (plugin.Config.PercentOfGuards / 100));
+            int spawns = (int)Math.Ceiling(playerCount * (plugin.Config.PercentOfGuards / 100));
             int commanders = 1;
             int lieutenants = Mathf.Clamp(spawns - commanders, 0, 3); ;
             int cadets = spawns - lieutenants - commanders;
