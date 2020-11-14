@@ -17,6 +17,6 @@ namespace GamemodeManager
         public string RequiredPermissions { get; set; } = "gamemodes.staff";
 
         [Description("Where to look for gamemode plugins.")]
-        public string GamemodeDirectory { get; set; } = Path.Combine(Paths.Plugins, "GamemodePlugins");
+        public string GamemodeDirectory { get; set; } = Path.Combine(Paths.Plugins, "Gamemodes");
     }
 }
