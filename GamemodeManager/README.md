@@ -19,13 +19,13 @@ gamemode_directory | string | (.config or %AppData%)/EXILED/Plugins/Gamemodes | 
 Command | Optional Arguments | | Description
 :---: | :---: | :---: | :------
 **Aliases** | **gamemode**
-gamemode enable (gamemode name) | OptionalArgs | ~~ | Enabled the specified gamemode. If any Optional Arguments are used, they will be passed into the gamemodes Enable command. (Refer to the gamemode's documentation for optional arguments, if any.)
-gamemode disable (gamemode name) | OptionalArgs | ~~ | Disables the specified gamemode. If any Optional Arguments are used, they will be passed into the gamemodes Disable command. (Refer to the gamemode's documentation for optional arguments, if any.)
+gamemode enable (name) | OptionalArgs | ~~ | Enabled the specified gamemode. If any Optional Arguments are used, they will be passed into the gamemodes Enable command. (Refer to the gamemode's documentation for optional arguments, if any.)
+gamemode disable (name) | OptionalArgs | ~~ | Disables the specified gamemode. If any Optional Arguments are used, they will be passed into the gamemodes Disable command. (Refer to the gamemode's documentation for optional arguments, if any.)
 gamemode list | ~~ | ~~ | Gets a list of all valid gamemode plugins that are installed in the gamemode_directory folder, that GMM can manage.
 gamemode queue help | ~~ | ~~ | Prints a list of valid gamemode queue subcommands, and their descriptions.
 gamemode queue list | ~~ | ~~ | Prints a list of all currently queued gamemodes, and their index number.
-gamemode queue add (gamemode name) | OptionalArgs | ~~ | Adds the specified gamemode to the end of the existing queue (if any). OptionalArgs are passed into the plugin's Enable command when it's that plugin's turn to run.
-gamemode queue remove (index number OR gamemode name) | ~~ | ~~ | Index Number: Removes a single entry from the gamemode queue list, removing only the item at the specified index number. Gamemode name: Removes all entries for the specified gamemode from the queue list.
+gamemode queue add (name) | OptionalArgs | ~~ | Adds the specified gamemode to the end of the existing queue (if any). OptionalArgs are passed into the plugin's Enable command when it's that plugin's turn to run.
+gamemode queue remove (index/name) | ~~ | ~~ | Index: Removes a single entry from the gamemode queue list, removing only the item at the specified index number. Name: Removes all entries for the specified gamemode from the queue list.
 
 ### How to use (For server owners):
 1. Install this as a normal plugin on your server.
