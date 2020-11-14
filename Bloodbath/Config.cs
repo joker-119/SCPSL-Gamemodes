@@ -4,7 +4,7 @@ namespace Bloodbath
 {
     public class Config : IConfig
     {
-        public bool IsEnabled { get; set; }
+        public bool IsEnabled { get; set; } = true;
         public bool SmartScpSelection { get; set; } = true;
         public int MaxScpCount { get; set; } = 3;
 

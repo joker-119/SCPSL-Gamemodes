@@ -28,6 +28,7 @@ namespace TeamDeathmatch
             Singleton = this;
             Methods = new Methods(this);
             EventHandlers = new EventHandlers(this);
+            Config.ParseItems();
 
             Methods.RegisterEvents();
 

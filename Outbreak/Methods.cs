@@ -112,28 +112,5 @@ namespace Outbreak
                 }
             }
         }
-
-        public void EndRound()
-        {
-            Player winner = null;
-            
-            foreach (Player player in Player.List)
-            {
-                switch (player.Role)
-                {
-                    case RoleType.Scp0492:
-                        player.Kill();
-                        break;
-                    case RoleType.ClassD:
-                        winner = player;
-                        break;
-                }
-            }
-
-            if (string.IsNullOrEmpty(plugin.Config.EndRoundBroadcast) || plugin.Config.EndRoundBroadcastDur <= 0) 
-                return;
-            Map.ClearBroadcasts();
-            Map.Broadcast(plugin.Config.EndRoundBroadcastDur, plugin.Config.EndRoundBroadcast.Replace("%user", winner == null ? "no one :o" : winner.Nickname));
-        }
     }
 }

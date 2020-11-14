@@ -42,21 +42,9 @@ namespace Outbreak
         {
             if (!plugin.IsRunning)
                 return;
-
-            int counter = 0;
-            foreach (Player player in Player.List)
-                if (player.Role == RoleType.ClassD)
-                    counter++;
-            switch (counter)
-            {
-                case 1:
-                    plugin.Methods.EndRound();
-                    break;
-                default:
-                    if (ev.Target.Role != RoleType.Scp0492 && plugin.Config.AllDeathsMakeZombies)
-                        Timing.CallDelayed(0.15f, () => ev.Target.Role = RoleType.Scp0492);
-                    break;
-            }
+            
+            if (ev.Target.Role != RoleType.Scp0492 && plugin.Config.AllDeathsMakeZombies)
+                Timing.CallDelayed(0.15f, () => ev.Target.Role = RoleType.Scp0492);
         }
 
         public void OnDoorInteraction(InteractingDoorEventArgs ev)
