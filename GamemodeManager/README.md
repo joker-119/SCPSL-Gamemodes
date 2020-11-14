@@ -24,7 +24,7 @@ gamemode disable (name) | OptionalArgs | ~~ | Disables the specified gamemode. I
 gamemode list | ~~ | ~~ | Gets a list of all valid gamemode plugins that are installed in the gamemode_directory folder, that GMM can manage.
 gamemode queue help | ~~ | ~~ | Prints a list of valid gamemode queue subcommands, and their descriptions.
 gamemode queue list | ~~ | ~~ | Prints a list of all currently queued gamemodes, and their index number.
-gamemode queue add (name) | OptionalArgs | ~~ | Adds the specified gamemode to the end of the existing queue (if any). OptionalArgs are passed into the plugin's Enable command when it's that plugin's turn to run.
+gamemode queue add (name) | NumberOfRounds | OptionalArgs | Adds the specified gamemode to the end of the existing queue (if any). OptionalArgs are passed into the plugin's Enable command when it's that plugin's turn to run. If a NumberOfRounds (a whole number only) is defined, it will be added to the queue that many times.
 gamemode queue remove (index/name) | ~~ | ~~ | Index: Removes a single entry from the gamemode queue list, removing only the item at the specified index number. Name: Removes all entries for the specified gamemode from the queue list.
 
 ### How to use (For server owners):
