@@ -29,6 +29,9 @@ namespace PeanutRun
 
         public void OnDetonated()
         {
+            if (!plugin.IsRunning)
+                return;
+            
             plugin.Methods.EndRound();
         }
     }
