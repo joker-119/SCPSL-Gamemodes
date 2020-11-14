@@ -17,6 +17,7 @@ namespace GamemodeManager
         public override string Prefix { get; } = "gamemode_manager";
         public override Version Version { get; } = new Version(1,1,1);
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 12);
+        public bool ShouldDisablePlugins { get; set; }
 
         public static Plugin Singleton;
 

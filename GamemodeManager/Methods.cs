@@ -32,8 +32,10 @@ namespace GamemodeManager
                     .Execute(new ArraySegment<string>(new[] {"enable", extraArgs, force ? "force" : string.Empty}), sender ?? Server.Host.Sender, out response);
                 Log.Debug($"{plugin.Name} Enable: {response}", this.plugin.Config.Debug);
 
-                if (!this.plugin.PluginsDisabled) 
+                if (force && !this.plugin.PluginsDisabled) 
                     DisablePlugins();
+                else if (!this.plugin.PluginsDisabled)
+                    this.plugin.ShouldDisablePlugins = true;
             }
             catch (Exception e)
             {
@@ -55,7 +57,7 @@ namespace GamemodeManager
                         sender ?? Server.Host.Sender, out response);
                 Log.Debug($"{plugin.Name} Disable: {response}", this.plugin.Config.Debug);
                 
-                if (this.plugin.PluginsDisabled)
+                if (force && this.plugin.PluginsDisabled)
                     EnablePlugins();
             }
             catch (Exception e)
@@ -70,6 +72,9 @@ namespace GamemodeManager
 
         public void DisablePlugins()
         {
+            if (plugin.PluginsDisabled)
+                return;
+            
             plugin.PluginsDisabled = true;
             foreach (IPlugin<IConfig> toDisable in plugin.Config.DisabledPluginsList)
                 toDisable.OnDisabled();
@@ -77,6 +82,9 @@ namespace GamemodeManager
 
         public void EnablePlugins()
         {
+            if (!plugin.PluginsDisabled)
+                return;
+            
             plugin.PluginsDisabled = false;
             foreach (IPlugin<IConfig> toEnable in plugin.Config.DisabledPluginsList)
                 toEnable.OnEnabled();
