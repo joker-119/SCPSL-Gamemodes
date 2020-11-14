@@ -3,7 +3,7 @@ using System.Linq;
 using CommandSystem;
 using Exiled.Permissions.Extensions;
 
-namespace TeamDeathmatch.Commands
+namespace DodgeBall.Commands
 {
     public class Enable : ICommand
     {
@@ -15,15 +15,14 @@ namespace TeamDeathmatch.Commands
                 return false;
             }
 
-
-            float timer = 0f;
+            ItemType type = ItemType.SCP018;
             if (arguments.Array != null && arguments.Array.Length > 2)
             {
-                if (!float.TryParse(arguments.Array[2], out timer) && arguments.Array.Length > 3)
-                    float.TryParse(arguments.Array[3], out timer);
+                if (arguments.Array.Any(a => a == "grenade"))
+                    type = ItemType.GrenadeFrag;
             }
-
-            Plugin.Singleton.Methods.EnableGamemode(timer, arguments.Array != null && arguments.Array.Any(a => a == "-f" || a == "force"));
+            
+            Plugin.Singleton.Methods.EnableGamemode(type, arguments.Array != null && arguments.Array.Any(a => a == "-f" || a == "force"));
             response = "The gamemode has been enabled.";
             return true;
         }
