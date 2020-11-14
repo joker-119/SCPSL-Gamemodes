@@ -15,4 +15,4 @@ A collection of scripted gamemodes for running on SCP Secret Laboratory Servers,
  - TeamDeathmatch [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/TeamDeathmatch/#teamdeathmatch-gamemode)]
 
 ## Tools
- - GamemodeManager [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/GamemodeManager/#gamemodemanager-gamemode)]
+ - GamemodeManager [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/GamemodeManager/#gamemodemanager)]
