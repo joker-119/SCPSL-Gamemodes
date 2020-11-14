@@ -39,8 +39,12 @@ namespace Gungame
 
         public void OnDied(DiedEventArgs ev)
         {
+            if (!plugin.IsRunning)
+                return;
+            
             if (ev.Killer != ev.Target)
                 plugin.Methods.UpgradeItem(ev.Killer, ev.Killer.CurrentItem.id);
+            Timing.CallDelayed(plugin.Config.RespawnTime, () => plugin.Methods.SpawnPlayer(ev.Target));
         }
 
         public void OnThrowingGrenade(ThrowingGrenadeEventArgs ev)
@@ -50,6 +54,15 @@ namespace Gungame
 
             Timing.CallDelayed(0.25f,
                 () => ev.Player.AddItem(ev.Type == GrenadeType.FragGrenade ? ItemType.GrenadeFrag : ItemType.SCP018));
+        }
+
+        public void OnPickingUpItem(PickingUpItemEventArgs ev)
+        {
+            if (!plugin.IsRunning)
+                return;
+
+            ev.IsAllowed = false;
+            ev.Pickup.Delete();
         }
     }
 }

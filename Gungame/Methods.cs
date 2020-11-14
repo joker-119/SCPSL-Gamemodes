@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using Exiled.API.Enums;
 using Exiled.API.Features;
 using MEC;
+using UnityEngine;
 using Server = Exiled.Events.Handlers.Server;
 
 namespace Gungame
@@ -10,6 +12,7 @@ namespace Gungame
         private readonly Plugin plugin;
         public Methods(Plugin plugin) => this.plugin = plugin;
         public List<Player> RecentlyUpgraded = new List<Player>();
+        List<Room> LczRooms = new List<Room>();
 
         internal void RegisterEvents(bool disable = false)
         {
@@ -17,6 +20,7 @@ namespace Gungame
             {
                 case true:
                     Exiled.Events.Handlers.Player.ThrowingGrenade -= plugin.EventHandlers.OnThrowingGrenade;
+                    Exiled.Events.Handlers.Player.PickingUpItem -= plugin.EventHandlers.OnPickingUpItem;
                     Exiled.Events.Handlers.Player.Hurting -= plugin.EventHandlers.OnHurting;
                     Exiled.Events.Handlers.Player.Died -= plugin.EventHandlers.OnDied;
                     Server.RoundStarted -= plugin.EventHandlers.OnRoundStart;
@@ -24,6 +28,7 @@ namespace Gungame
                     break;
                 case false:
                     Exiled.Events.Handlers.Player.ThrowingGrenade += plugin.EventHandlers.OnThrowingGrenade;
+                    Exiled.Events.Handlers.Player.PickingUpItem += plugin.EventHandlers.OnPickingUpItem;
                     Exiled.Events.Handlers.Player.Hurting += plugin.EventHandlers.OnHurting;
                     Exiled.Events.Handlers.Player.Died += plugin.EventHandlers.OnDied;
                     Server.RoundStarted += plugin.EventHandlers.OnRoundStart;
@@ -35,18 +40,41 @@ namespace Gungame
         public void SetupPlayers()
         {
             Round.IsLocked = true;
+
+            SetupMap();
+            
             plugin.FriendlyFire = Exiled.API.Features.Server.FriendlyFire;
             Exiled.API.Features.Server.FriendlyFire = true;
-            foreach (Player player in Player.List)
-            {
-                player.Role = RoleType.ClassD;
-                Timing.CallDelayed(0.5f, () => player.ResetInventory(new List<ItemType> { ItemType.SCP018 }));
-                player.Ammo[0] = 300;
-                player.Ammo[1] = 300;
-                player.Ammo[2] = 300;
-            }
+            foreach (Player player in Player.List) 
+                SpawnPlayer(player);
 
             plugin.IsRunning = true;
+        }
+
+        void SetupMap()
+        {
+            foreach (Room room in Map.Rooms)
+                if (room.Zone == ZoneType.LightContainment)
+                    LczRooms.Add(room);
+                else
+                    foreach (Door door in room.Doors)
+                    {
+                        door.NetworkisOpen = false;
+                        door.Networklocked = true;
+                    }
+        }
+
+        internal void SpawnPlayer(Player player)
+        {
+            player.Role = RoleType.ClassD;
+            Timing.CallDelayed(0.5f, () =>
+            {
+                player.ResetInventory(new List<ItemType> { ItemType.SCP018 });
+                player.Position = LczRooms[plugin.Rng.Next(LczRooms.Count)].Position + (Vector3.up * 1.25f);
+            });
+            player.Ammo[0] = 300;
+            player.Ammo[1] = 300;
+            player.Ammo[2] = 300;
         }
 
         public void UpgradeItem(Player player, ItemType curWep)
@@ -121,7 +149,7 @@ namespace Gungame
             player.Ammo[1] = 300;
             player.Ammo[2] = 300;
             RecentlyUpgraded.Add(player);
-            Timing.CallDelayed(1.5f, () => RecentlyUpgraded.Remove(player));
+            Timing.CallDelayed(plugin.Config.UpgradeDelay, () => RecentlyUpgraded.Remove(player));
         }
 
         public void EndRound(Player winner)
