@@ -14,8 +14,13 @@ namespace TeamDeathmatch.Commands
                 response = "You are not permitted to run this command.";
                 return false;
             }
-            
-            Plugin.Singleton.Methods.EnableGamemode(arguments.Array != null && arguments.Array.Any(a => a == "-f" || a == "force"));
+
+
+            float timer = 0f;
+            if (arguments.Array != null && arguments.Array.Length > 3) 
+                float.TryParse(arguments.Array[2], out timer);
+
+            Plugin.Singleton.Methods.EnableGamemode(timer, arguments.Array != null && arguments.Array.Any(a => a == "-f" || a == "force"));
             response = "The gamemode has been enabled.";
             return true;
         }

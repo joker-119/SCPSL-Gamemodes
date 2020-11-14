@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Exiled.API.Enums;
 using Exiled.API.Features;
+using MEC;
 using Server = Exiled.Events.Handlers.Server;
 
 namespace TeamDeathmatch
@@ -54,6 +57,58 @@ namespace TeamDeathmatch
 
             SetupMap();
             plugin.IsRunning = true;
+
+            if (plugin.Timer > 0f)
+                Timing.RunCoroutine(RoundTimer(plugin.Timer));
+        }
+
+        IEnumerator<float> RoundTimer(float timer)
+        {
+            yield return Timing.WaitForSeconds(timer);
+            
+            List<Player> mtfPlayers = new List<Player>();
+            List<Player> ciPlayers = new List<Player>();
+
+            foreach (Player player in Player.List)
+                if (player.Team == Team.MTF)
+                    mtfPlayers.Add(player);
+                else if (player.Team == Team.CHI)
+                    ciPlayers.Add(player);
+
+            if (mtfPlayers.Count > ciPlayers.Count)
+            {
+                foreach (Player player in ciPlayers)
+                    player.Kill();
+                EndRound(LeadingTeam.FacilityForces);
+            }
+            else if (ciPlayers.Count > mtfPlayers.Count)
+            {
+                foreach (Player player in mtfPlayers)
+                    player.Kill();
+                EndRound(LeadingTeam.ChaosInsurgency);
+            }
+            else if (ciPlayers.Count == mtfPlayers.Count)
+            {
+                foreach (Player player in Player.List)
+                    player.Kill();
+                EndRound(LeadingTeam.Draw);
+            }
+        }
+
+        void EndRound(LeadingTeam team)
+        {
+            switch (team)
+            {
+                case LeadingTeam.FacilityForces:
+                    Map.Broadcast(10, "MTF have claimed victory!");
+                    break;
+                case LeadingTeam.ChaosInsurgency:
+                    Map.Broadcast(10, "Chaos Insurgency have claimed victory!");
+                    break;
+                case LeadingTeam.Draw:
+                    Map.Broadcast(10, "The round was a draw!");
+                    break;
+            }
         }
 
         void SetupMap()
@@ -64,10 +119,11 @@ namespace TeamDeathmatch
                     door.NetworkisOpen = true;
         }
 
-        public void EnableGamemode(bool force = false)
+        public void EnableGamemode(float timer, bool force = false)
         {
             plugin.IsEnabled = true;
             plugin.ShouldDisableNextRound = true;
+            plugin.Timer = timer;
             if (force)
                 SetupPlayers();
         }

@@ -15,6 +15,7 @@ namespace TeamDeathmatch
 
         public Methods Methods { get; private set; }
         public EventHandlers EventHandlers { get; private set; }
+        public float Timer { get; set; }
 
         public Random Rng = new Random();
         public bool IsEnabled = false;
