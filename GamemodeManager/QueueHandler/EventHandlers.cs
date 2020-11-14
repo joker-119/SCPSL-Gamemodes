@@ -1,4 +1,5 @@
 ﻿using Exiled.API.Features;
+using Exiled.Events.EventArgs;
 
 namespace GamemodeManager.QueueHandler
 {
@@ -16,6 +17,14 @@ namespace GamemodeManager.QueueHandler
                 Plugin.Singleton.Methods.EnableGamemode(queueHandler.Queue[0].Item1, out string _, false, null, queueHandler.Queue[0].Item2);
                 queueHandler.RemoveQueueItem(0);
             }
+            else if (Plugin.Singleton.PluginsDisabled)
+                Plugin.Singleton.Methods.EnablePlugins();
+        }
+
+        public void OnRoundEnd(RoundEndedEventArgs ev)
+        {
+            if (Plugin.Singleton.PluginsDisabled)
+                Plugin.Singleton.Methods.EnablePlugins();
         }
     }
 }

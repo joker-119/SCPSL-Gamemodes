@@ -52,9 +52,11 @@ namespace GamemodeManager.QueueHandler
             {
                 case true:
                     Exiled.Events.Handlers.Server.WaitingForPlayers -= EventHandlers.OnWaitingForPlayers;
+                    Exiled.Events.Handlers.Server.RoundEnded -= EventHandlers.OnRoundEnd;
                     break;
                 case false:
                     Exiled.Events.Handlers.Server.WaitingForPlayers += EventHandlers.OnWaitingForPlayers;
+                    Exiled.Events.Handlers.Server.RoundEnded += EventHandlers.OnRoundEnd;
                     break;
             }
         }
