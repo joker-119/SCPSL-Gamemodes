@@ -24,9 +24,9 @@ namespace GamemodeManager.QueueHandlerCommands
             string msg = string.Empty;
 
             int counter = 1;
-            foreach (IPlugin<IConfig> plugin in Plugin.Singleton.QueueHandler.Queue)
+            foreach (Tuple<IPlugin<IConfig>,string> plugin in Plugin.Singleton.QueueHandler.Queue)
             {
-                msg += $"{counter}: {plugin.Name}\n";
+                msg += $"{counter}: {plugin.Item1.Name}\n";
                 counter++;
             }
 
