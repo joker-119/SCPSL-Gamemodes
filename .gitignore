@@ -365,3 +365,15 @@ FodyWeavers.xsd
 
 # NuGet
 NuGet.config
+/SCPSL Gamemodes/Gamemodes/Bloodbath.dll
+/SCPSL Gamemodes/Gamemodes/DodgeBall.dll
+/SCPSL Gamemodes/GamemodeManager.dll
+/gamemodes
+/SCPSL Gamemodes/Gamemodes/Gungame.dll
+/SCPSL Gamemodes/Gamemodes/HideNSeek.dll
+/SCPSL Gamemodes/Gamemodes/Juggernaut.dll
+/SCPSL Gamemodes/Gamemodes/Outbreak.dll
+/SCPSL Gamemodes/Gamemodes/PeanutInfection.dll
+/SCPSL Gamemodes/Gamemodes/PeanutRun.dll
+/SCPSL Gamemodes.tar.gz
+/SCPSL Gamemodes/Gamemodes/TeamDeathmatch.dll
