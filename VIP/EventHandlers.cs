@@ -34,6 +34,9 @@ namespace VIP
 
         public void OnPickingUpItem(PickingUpItemEventArgs ev)
         {
+            if (!plugin.IsRunning)
+                return;
+
             if (plugin.Config.DisableItemPickup) 
                 ev.IsAllowed = false;
             else if(plugin.Config.DisableItemPickupVip)
@@ -45,6 +48,9 @@ namespace VIP
 
         public void OnDying(DyingEventArgs ev)
         {
+            if (!plugin.IsRunning)
+                return;
+
             if (ev.Target == plugin.VIP)
             {
                 foreach (Player p in Player.List)
@@ -81,6 +87,9 @@ namespace VIP
 
         public void OnEscaping(EscapingEventArgs ev)
         {
+            if (!plugin.IsRunning)
+                return;
+
             if (ev.Player == plugin.VIP)
             {
                 foreach (Player p in Player.List)
