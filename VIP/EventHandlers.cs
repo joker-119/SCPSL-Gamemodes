@@ -33,20 +33,20 @@ namespace VIP
         }
 
         public void OnPickingUpItem(PickingUpItemEventArgs ev)
-		{
+        {
             if (plugin.Config.DisableItemPickup) 
                 ev.IsAllowed = false;
             else if(plugin.Config.DisableItemPickupVip)
-			{
+            {
                 if (ev.Player == plugin.VIP) 
                     ev.IsAllowed = false;
-			}
+            }
 		}
 
         public void OnDying(DyingEventArgs ev)
-		{
+        {
             if (ev.Target == plugin.VIP)
-			{
+            {
                 foreach (Player p in Player.List)
                 {
                     if (plugin.Guards.Contains(p) || p == plugin.VIP) 
@@ -58,7 +58,7 @@ namespace VIP
             }
 
             if (plugin.Config.GuardsRespawn && plugin.Guards.Contains(ev.Target))
-			{
+            {
                 RoleType role = ev.Target.Role;
                 Timing.CallDelayed(plugin.Config.GuardRespawnDelay, () =>
                 {
@@ -68,8 +68,9 @@ namespace VIP
                         ev.Target.Position = !Map.IsLCZDecontaminated ? RoleType.ClassD.GetRandomSpawnPoint() : RoleType.Scp106.GetRandomSpawnPoint();
                     });
                 });
-			}else if (plugin.Config.AttackersRespawn && !plugin.Guards.Contains(ev.Target) && ev.Target != plugin.VIP)
-			{
+            }
+            else if (plugin.Config.AttackersRespawn && !plugin.Guards.Contains(ev.Target) && ev.Target != plugin.VIP)
+            {
                 RoleType role = ev.Target.Role;
                 Timing.CallDelayed(plugin.Config.AttackerRespawnDelay, () =>
                 {
@@ -90,6 +91,6 @@ namespace VIP
                 Map.Broadcast(10, "The VIP has escaped. The guards and VIP have won!");
                 Round.IsLocked = false;
             }
-		}
+        }
     }
 }
