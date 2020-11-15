@@ -35,6 +35,8 @@ namespace VIP
 
         public void SetupPlayers()
         {
+            Round.IsLocked = true;
+
             plugin.Guards = new List<Player>();
             int playerCount = Player.Dictionary.Count;
             int r = plugin.Rng.Next(playerCount);
@@ -155,13 +157,16 @@ namespace VIP
 
                 plugin.IsEnabled = false;
                 plugin.IsRunning = false;
+                Round.IsLocked = false;
             }
         }
 
         public IEnumerator<float> RoundTimer()
 		{
             yield return Timing.WaitForSeconds(plugin.Config.MaxDuration);
-            foreach(Player p in Player.List)
+            RoundSummary.escaped_ds = 1;
+            Round.IsLocked = false;
+            foreach (Player p in Player.List)
 			{
                 if (plugin.Guards.Contains(p) || p == plugin.VIP) p.Kill();
 			}

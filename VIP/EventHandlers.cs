@@ -52,7 +52,9 @@ namespace VIP
                     if (plugin.Guards.Contains(p) || p == plugin.VIP) 
                         p.Kill();
                 }
+                RoundSummary.escaped_ds = 1;
                 Map.Broadcast(10, "The VIP was killed. Attackers have won!");
+                Round.IsLocked = false;
             }
 
             if (plugin.Config.GuardsRespawn && plugin.Guards.Contains(ev.Target))
@@ -61,7 +63,10 @@ namespace VIP
                 Timing.CallDelayed(plugin.Config.GuardRespawnDelay, () =>
                 {
                     ev.Target.SetRole(role);
-                    ev.Target.Position = RoleType.ClassD.GetRandomSpawnPoint();
+                    Timing.CallDelayed(0.2f, () =>
+                    {
+                        ev.Target.Position = !Map.IsLCZDecontaminated ? RoleType.ClassD.GetRandomSpawnPoint() : RoleType.Scp106.GetRandomSpawnPoint();
+                    });
                 });
 			}else if (plugin.Config.AttackersRespawn && !plugin.Guards.Contains(ev.Target) && ev.Target != plugin.VIP)
 			{
@@ -83,6 +88,7 @@ namespace VIP
                         p.Kill();
                 }
                 Map.Broadcast(10, "The VIP has escaped. The guards and VIP have won!");
+                Round.IsLocked = false;
             }
 		}
     }
