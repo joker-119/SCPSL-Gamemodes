@@ -41,7 +41,7 @@ namespace VIP
                 if (ev.Player == plugin.VIP) 
                     ev.IsAllowed = false;
             }
-		}
+        }
 
         public void OnDying(DyingEventArgs ev)
         {
@@ -77,12 +77,12 @@ namespace VIP
                     ev.Target.SetRole(role);
                 });
             }
-		}
+        }
 
         public void OnEscaping(EscapingEventArgs ev)
-		{
+        {
             if (ev.Player == plugin.VIP)
-			{
+            {
                 foreach (Player p in Player.List)
                 {
                     if (!plugin.Guards.Contains(p) && p != plugin.VIP) 
