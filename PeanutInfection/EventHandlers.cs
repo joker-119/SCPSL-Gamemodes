@@ -21,14 +21,6 @@ namespace PeanutInfection
                     ev.Target.SetRole(RoleType.Scp173, true);
                     ev.Target.Position = ev.Killer.Position;
                 });
-
-            int counter = 0;
-            foreach (Player player in Player.List)
-                if (player.Role == RoleType.ClassD)
-                    counter++;
-            
-            if (counter == 0)
-                plugin.Methods.EndRound();
         }
 
         public void OnPlayerEscape(EscapingEventArgs ev)
@@ -45,16 +37,8 @@ namespace PeanutInfection
             if (!plugin.IsRunning)
                 return;
             
-            if (!plugin.IsEnded)
-            {
-                ev.IsAllowed = false;
-                ev.IsRoundEnded = false;
-                
-                return;
-            }
-
-            ev.LeadingTeam = plugin.EscapeCounter > 0 ? LeadingTeam.ChaosInsurgency : LeadingTeam.Anomalies;
-            ev.IsRoundEnded = true;
+            if (ev.IsRoundEnded)
+                ev.LeadingTeam = plugin.EscapeCounter > 0 ? LeadingTeam.ChaosInsurgency : LeadingTeam.Anomalies;
         }
 
         public void OnRoundStart()

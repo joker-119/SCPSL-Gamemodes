@@ -47,11 +47,6 @@ namespace PeanutInfection
 
             plugin.IsRunning = true;
         }
-        
-        public void EndRound()
-        {
-            plugin.IsEnded = true;
-        }
 
         public void EnableGamemode(bool force = false)
         {
