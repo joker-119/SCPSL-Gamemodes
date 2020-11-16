@@ -22,10 +22,10 @@ namespace VIP
             if (!plugin.IsRunning)
                 return;
 
-            plugin.VIP = null;
+            plugin.Vip = null;
             plugin.Guards = null;
             plugin.IsRunning = false;
-            if (plugin.Coroutine != null) 
+            if (plugin.Coroutine.IsValid) 
                 Timing.KillCoroutines(plugin.Coroutine);
             if (plugin.ShouldDisableNextRound)
                 plugin.IsEnabled = false;
@@ -40,7 +40,7 @@ namespace VIP
                 ev.IsAllowed = false;
             else if(plugin.Config.DisableItemPickupVip)
             {
-                if (ev.Player == plugin.VIP) 
+                if (ev.Player == plugin.Vip) 
                     ev.IsAllowed = false;
             }
         }
@@ -50,11 +50,11 @@ namespace VIP
             if (!plugin.IsRunning)
                 return;
 
-            if (ev.Target == plugin.VIP)
+            if (ev.Target == plugin.Vip)
             {
                 foreach (Player p in Player.List)
                 {
-                    if (plugin.Guards.Contains(p) || p == plugin.VIP) 
+                    if (plugin.Guards.Contains(p) || p == plugin.Vip) 
                         p.Kill();
                 }
                 RoundSummary.escaped_ds = 1;
@@ -74,7 +74,7 @@ namespace VIP
                     });
                 });
             }
-            else if (plugin.Config.AttackersRespawn && !plugin.Guards.Contains(ev.Target) && ev.Target != plugin.VIP)
+            else if (plugin.Config.AttackersRespawn && !plugin.Guards.Contains(ev.Target) && ev.Target != plugin.Vip)
             {
                 RoleType role = ev.Target.Role;
                 Timing.CallDelayed(plugin.Config.AttackerRespawnDelay, () =>
@@ -89,11 +89,11 @@ namespace VIP
             if (!plugin.IsRunning)
                 return;
 
-            if (ev.Player == plugin.VIP)
+            if (ev.Player == plugin.Vip)
             {
                 foreach (Player p in Player.List)
                 {
-                    if (!plugin.Guards.Contains(p) && p != plugin.VIP) 
+                    if (!plugin.Guards.Contains(p) && p != plugin.Vip) 
                         p.Kill();
                 }
                 Map.Broadcast(10, "The VIP has escaped. The guards and VIP have won!");

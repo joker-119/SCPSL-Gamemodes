@@ -6,9 +6,9 @@ namespace VIP.Commands
 {
     [CommandHandler(typeof(RemoteAdminCommandHandler))]
     [CommandHandler(typeof(GameConsoleCommandHandler))]
-    public sealed class VIP : ParentCommand
+    public sealed class Vip : ParentCommand
     {
-        public VIP() => LoadGeneratedCommands();
+        public Vip() => LoadGeneratedCommands();
 
         public override void LoadGeneratedCommands()
         {

@@ -39,27 +39,22 @@ namespace VIP
             plugin.IsRunning = true;
 
             plugin.Guards = new List<Player>();
-            int playerCount = Player.Dictionary.Count;
-            int r = plugin.Rng.Next(playerCount);
+            List<Player> players = Player.List.ToList();
+            int r = plugin.Rng.Next(players.Count);
 
-            plugin.VIP = Player.List.ElementAt(r);
+            plugin.Vip = players[r];
+            players.Remove(players[r]);
 
-            int spawns = (int)Math.Ceiling(playerCount * (plugin.Config.PercentOfGuards / 100));
+            int spawns = (int)Math.Ceiling((players.Count + 1) * (plugin.Config.PercentOfGuards / 100));
             int commanders = 1;
             int lieutenants = Mathf.Clamp(spawns - commanders, 0, 3); ;
-            int cadets = spawns - lieutenants - commanders;
 
             Timing.CallDelayed(0.1f, () =>
             {
                 for (int i = 0; i < spawns; i++)
                 {
-                    int idx = plugin.Rng.Next(playerCount);
-                    if (idx == r)
-                    {
-                        i--;
-                        continue;
-                    }
-                    Player p = Player.List.ElementAt(idx);
+                    r = plugin.Rng.Next(players.Count);
+                    Player p = players[r];
 
                     plugin.Guards.Add(p);
 
@@ -79,24 +74,26 @@ namespace VIP
                         p.Broadcast(5, plugin.Config.GuardBroadcast);
                         p.Position = RoleType.ClassD.GetRandomSpawnPoint();
                     });
+
+                    players.Remove(players[r]);
                 }
-                plugin.VIP.SetRole(RoleType.Scientist);
+                
+                plugin.Vip.Role = RoleType.Scientist;
                 Timing.CallDelayed(0.5f, () =>
                 {
-                    plugin.VIP.Broadcast(5, plugin.Config.VipBroadcast);
-                    plugin.VIP.Position = RoleType.ClassD.GetRandomSpawnPoint();
-                    plugin.VIP.Health = plugin.Config.VipStartingHealth;
-                    plugin.VIP.ReferenceHub.playerStats.artificialHpDecay = plugin.Config.VipArmorDecay ? plugin.Config.VipArmorDecayRate : 0;
-                    plugin.VIP.AdrenalineHealth = plugin.Config.VipStartingArmor;
+                    plugin.Vip.Broadcast(5, plugin.Config.VipBroadcast);
+                    plugin.Vip.Position = RoleType.ClassD.GetRandomSpawnPoint();
+                    plugin.Vip.Health = plugin.Config.VipStartingHealth;
+                    plugin.Vip.ReferenceHub.playerStats.artificialHpDecay = plugin.Config.VipArmorDecay ? plugin.Config.VipArmorDecayRate : 0;
+                    plugin.Vip.AdrenalineHealth = plugin.Config.VipStartingArmor;
                 });
-                foreach (Player p in Player.List)
+                
+                foreach (Player p in players)
                 {
-                    if (!plugin.Guards.Contains(p) && p != plugin.VIP)
-                    {
-                        p.Broadcast(5, plugin.Config.AttackerBroadcast);
-                        p.SetRole(RoleType.ChaosInsurgency);
-                    }
+                    p.Broadcast(5, plugin.Config.AttackerBroadcast);
+                    p.SetRole(RoleType.ChaosInsurgency);
                 }
+                
                 plugin.Coroutine = Timing.RunCoroutine(RoundTimer());
             });
         }
@@ -165,13 +162,14 @@ namespace VIP
         public IEnumerator<float> RoundTimer()
 		{
             yield return Timing.WaitForSeconds(plugin.Config.MaxDuration);
+            
             RoundSummary.escaped_ds = 1;
-            Round.IsLocked = false;
             foreach (Player p in Player.List)
-			{
-                if (plugin.Guards.Contains(p) || p == plugin.VIP) p.Kill();
-			}
+                if (plugin.Guards.Contains(p) || p == plugin.Vip) 
+                    p.Kill();
+            
             Map.Broadcast(10, "The VIP was unable to escape. Attackers have won!");
-		}
+            Round.IsLocked = false;
+        }
     }
 }

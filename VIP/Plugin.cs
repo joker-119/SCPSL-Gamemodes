@@ -23,7 +23,7 @@ namespace VIP
         public Random Rng = new Random();
         public string PermissionString = "gamemodes.staff";
 
-        internal Player VIP;
+        internal Player Vip;
         internal List<Player> Guards;
         internal CoroutineHandle Coroutine;
 

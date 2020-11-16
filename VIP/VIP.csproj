@@ -76,7 +76,7 @@
   <ItemGroup>
     <Compile Include="Commands\Disable.cs" />
     <Compile Include="Commands\Enable.cs" />
-    <Compile Include="Commands\VIP.cs" />
+    <Compile Include="Commands\Vip.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="EventHandlers.cs" />
     <Compile Include="Methods.cs" />
