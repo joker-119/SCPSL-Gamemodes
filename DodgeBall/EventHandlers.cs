@@ -1,6 +1,7 @@
 using Exiled.API.Enums;
 using Exiled.API.Features;
 using Exiled.Events.EventArgs;
+using MEC;
 
 namespace DodgeBall
 {
@@ -14,7 +15,7 @@ namespace DodgeBall
             if (!plugin.IsEnabled)
                 return;
 
-            plugin.Methods.SetupPlayers();
+            Timing.CallDelayed(1f, () => plugin.Methods.SetupPlayers());
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)
@@ -23,8 +24,12 @@ namespace DodgeBall
                 return;
 
             plugin.IsRunning = false;
+            
             if (plugin.ShouldDisableNextRound)
                 plugin.IsEnabled = false;
+            
+            if (plugin.Coroutine.IsValid)
+                Timing.KillCoroutines(plugin.Coroutine);
         }
     }
 }

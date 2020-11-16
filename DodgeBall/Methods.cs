@@ -41,7 +41,7 @@ namespace DodgeBall
 
             plugin.IsRunning = true;
 
-            Timing.RunCoroutine(DodgeballLoop());
+            plugin.Coroutine = Timing.RunCoroutine(DodgeballLoop());
         }
 
         IEnumerator<float> DodgeballLoop()
