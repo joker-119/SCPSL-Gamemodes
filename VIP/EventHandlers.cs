@@ -14,7 +14,6 @@ namespace VIP
             if (!plugin.IsEnabled)
                 return;
 
-            plugin.IsRunning = true;
             plugin.Methods.SetupPlayers();
         }
 

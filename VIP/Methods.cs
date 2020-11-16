@@ -36,6 +36,7 @@ namespace VIP
         public void SetupPlayers()
         {
             Round.IsLocked = true;
+            plugin.IsRunning = true;
 
             plugin.Guards = new List<Player>();
             int playerCount = Player.Dictionary.Count;
