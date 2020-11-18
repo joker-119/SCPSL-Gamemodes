@@ -15,7 +15,7 @@ namespace PeanutInfection
             if (!plugin.IsRunning)
                 return;
             
-            if (ev.Killer.Role == RoleType.Scp173)
+            if (ev.Killer != null && ev.Target != null && ev.Killer.Role == RoleType.Scp173)
                 Timing.CallDelayed(1f, () =>
                 {
                     ev.Target.SetRole(RoleType.Scp173, true);
@@ -46,7 +46,7 @@ namespace PeanutInfection
             if (!plugin.IsEnabled)
                 return;
             
-            plugin.Methods.SetupPlayers();
+            Timing.CallDelayed(1f, () => plugin.Methods.SetupPlayers());
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)

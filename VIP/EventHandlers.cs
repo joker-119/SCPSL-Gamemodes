@@ -14,7 +14,7 @@ namespace VIP
             if (!plugin.IsEnabled)
                 return;
 
-            plugin.Methods.SetupPlayers();
+            Timing.CallDelayed(1f, () => plugin.Methods.SetupPlayers());
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)

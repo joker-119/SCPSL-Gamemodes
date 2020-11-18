@@ -8,7 +8,7 @@ namespace PeanutRun
         public override string Author { get; } = "galaxy119";
         public override string Name { get; } = "PeanutRun";
         public override string Prefix { get; } = "gamemode_PeanutRun";
-        public override Version Version { get; } = new Version(1, 0, 1);
+        public override Version Version { get; } = new Version(1, 0, 2);
         public override Version RequiredExiledVersion { get; } = new Version(2, 1, 15);
 
         public static Plugin Singleton;

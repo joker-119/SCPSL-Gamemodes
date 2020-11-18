@@ -8,8 +8,8 @@ namespace Bloodbath
         public override string Author { get; } = "Galaxy119";
         public override string Name { get; } = "Bloodbath";
         public override string Prefix { get; } = "gamemode_bloodbath";
-        public override Version Version { get; } = new Version(1,0,0);
-        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 12);
+        public override Version Version { get; } = new Version(1,0,1);
+        public override Version RequiredExiledVersion { get; } = new Version(2, 1, 15);
 
         public static Plugin Singleton;
         

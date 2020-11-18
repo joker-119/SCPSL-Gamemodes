@@ -16,7 +16,7 @@ namespace Outbreak
                 return;
 
             plugin.IsRunning = true;
-            plugin.Methods.SetupPlayers();
+            Timing.CallDelayed(1f, () => plugin.Methods.SetupPlayers());
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)
