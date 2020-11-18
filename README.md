@@ -14,6 +14,7 @@ Each Gamemode is, in and of itself, it's own self-contained plugin, with no extr
  - PeanutInfection [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/PeanutInfection/#peanutinfection-gamemode)]
  - PeanutRun [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/PeanutRun/#peanutrun-gamemode)]
  - TeamDeathmatch [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/TeamDeathmatch/#teamdeathmatch-gamemode)]
+ - VIP [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/VIP#vip-gamemode)]
 
 ## Tools
  - GamemodeManager [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/GamemodeManager/#gamemodemanager)]
