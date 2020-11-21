@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Exiled.API.Features;
@@ -34,18 +35,25 @@ namespace PeanutInfection
 
         public void SetupPlayers()
         {
-            List<Player> players = Player.List.ToList();
-            for (int i = 0; i < GetScpCount; i++)
+            try
             {
-                int r = plugin.Rng.Next(players.Count);
-                players[r].Role = RoleType.Scp173;
-                players.Remove(players[r]);
+                List<Player> players = Player.List.ToList();
+                for (int i = 0; i < GetScpCount; i++)
+                {
+                    int r = plugin.Rng.Next(players.Count);
+                    players[r].Role = RoleType.Scp173;
+                    players.Remove(players[r]);
+                }
+
+                foreach (Player player in players)
+                    player.Role = RoleType.ClassD;
+
+                plugin.IsRunning = true;
             }
-
-            foreach (Player player in players) 
-                player.Role = RoleType.ClassD;
-
-            plugin.IsRunning = true;
+            catch (Exception e)
+            {
+                Log.Error($"Setup Players:\n{e}\n{e.StackTrace}");
+            }
         }
 
         public void EnableGamemode(bool force = false)

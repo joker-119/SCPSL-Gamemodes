@@ -46,7 +46,7 @@ namespace PeanutInfection
             if (!plugin.IsEnabled)
                 return;
             
-            Timing.CallDelayed(1f, () => plugin.Methods.SetupPlayers());
+            Timing.CallDelayed(1.5f, () => plugin.Methods.SetupPlayers());
         }
 
         public void OnRoundEnd(RoundEndedEventArgs ev)

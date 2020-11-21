@@ -8,7 +8,7 @@ namespace PeanutInfection
         public override string Author { get; } = "galaxy119";
         public override string Name { get; } = "PeanutInfection";
         public override string Prefix { get; } = "gamemode_peanut_infection";
-        public override Version Version { get; } = new Version(1,0,2);
+        public override Version Version { get; } = new Version(1,0,3);
         public override Version RequiredExiledVersion { get; } = new Version(2,1,15);
 
         public static Plugin Singleton;

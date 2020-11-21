@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using CommandSystem;
 using Exiled.API.Interfaces;
 using Exiled.Permissions.Extensions;
@@ -22,22 +23,27 @@ namespace GamemodeManager.QueueHandlerCommands
                 response = "You must specify a gamemode.";
                 return false;
             }
-            
+
+            bool allPlugins = args[3] == "all" || args[3] == "*";
+
             IPlugin<IConfig> plugin = null;
-
-            foreach (IPlugin<IConfig> loadedPlugin in Plugin.Singleton.LoadedGamemodes.Keys)
+            
+            if (!allPlugins)
             {
-                if (string.Equals(loadedPlugin.Name, args[3], StringComparison.CurrentCultureIgnoreCase))
+                foreach (IPlugin<IConfig> loadedPlugin in Plugin.Singleton.LoadedGamemodes.Keys)
                 {
-                    plugin = loadedPlugin;
-                    break;
+                    if (string.Equals(loadedPlugin.Name, args[3], StringComparison.CurrentCultureIgnoreCase))
+                    {
+                        plugin = loadedPlugin;
+                        break;
+                    }
                 }
-            }
 
-            if (plugin == null)
-            {
-                response = $"The specified gamemode {args[0]} is not installed.";
-                return false;
+                if (plugin == null)
+                {
+                    response = $"The specified gamemode {args[0]} is not installed.";
+                    return false;
+                }
             }
 
             int roundCount = 1;
@@ -51,9 +57,13 @@ namespace GamemodeManager.QueueHandlerCommands
                         extra += $"{s} ";
             extra = extra.Trim();
             
-            Plugin.Singleton.QueueHandler.AddToQueue(plugin, roundCount, extra);
+            if (allPlugins)
+                foreach (IPlugin<IConfig> p in Plugin.Singleton.LoadedGamemodes.Keys)
+                    Plugin.Singleton.QueueHandler.AddToQueue(p, roundCount, extra);
+            else
+                Plugin.Singleton.QueueHandler.AddToQueue(plugin, roundCount, extra);
 
-            response = $"{plugin.Name} has been added to the queue for {roundCount} rounds.";
+            response = $"{(allPlugins ? "All plugins have" : $"{plugin.Name} has")} been added to the queue for {roundCount} rounds.";
             
             return true;
         }
