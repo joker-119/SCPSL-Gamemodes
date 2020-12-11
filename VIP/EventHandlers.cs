@@ -54,8 +54,8 @@ namespace VIP
             {
                 foreach (Player p in Player.List)
                 {
-                    if (plugin.Guards.Contains(p) || p == plugin.Vip) 
-                        p.Kill();
+                    if (plugin.Guards.Contains(p) || p == plugin.Vip)
+                        p.Role = RoleType.Spectator;
                 }
                 RoundSummary.escaped_ds = 1;
                 Map.Broadcast(10, "The VIP was killed. Attackers have won!");
