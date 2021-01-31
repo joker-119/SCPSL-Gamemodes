@@ -1,5 +1,9 @@
-﻿using Exiled.API.Features;
+﻿using Exiled.API.Enums;
+using Exiled.API.Extensions;
+using Exiled.API.Features;
 using Exiled.Events.EventArgs;
+using Interactables.Interobjects;
+using Interactables.Interobjects.DoorUtils;
 using MEC;
 using Outbreak.Components;
 
@@ -52,13 +56,13 @@ namespace Outbreak
             if (!plugin.IsRunning)
                 return;
             
-            if (ev.Door.locked && ev.Player.Role == RoleType.Scp0492 && plugin.AlphaZombies.Contains(ev.Player) &&
+            if (ev.Door.ActiveLocks > 0 && ev.Player.Role == RoleType.Scp0492 && plugin.AlphaZombies.Contains(ev.Player) &&
                 plugin.Config.AlphasBreakLockedDoors)
             {
-                if (ev.Door.doorType == Door.DoorTypes.HeavyGate)
-                    ev.Door.PryGate();
-                else
-                    ev.Door.DestroyDoor(true);
+                if (ev.Door.TryGetComponent(out PryableDoor component))
+                    component.TryPryGate();
+                else if (ev.Door is IDamageableDoor damage)
+                    damage.ServerDamage(ushort.MaxValue, DoorDamageType.ServerCommand);
             }
         }
         

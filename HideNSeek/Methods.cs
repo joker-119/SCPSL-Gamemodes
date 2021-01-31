@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Exiled.API.Features;
+using Interactables.Interobjects.DoorUtils;
 using MEC;
 using UnityEngine;
 
@@ -66,9 +67,9 @@ namespace HideNSeek
 
         public void SetupMap()
         {
-            foreach (Door door in Map.Doors)
-                if (door.DoorName.ToLower().Contains("gate") || door.DoorName.ToLower().Contains("checkpoint"))
-                    door.Networklocked = true;
+            foreach (DoorVariant door in Map.Doors)
+                if (door.GetComponent<DoorNametagExtension>().GetName.ToLower().Contains("gate") || door.GetComponent<DoorNametagExtension>().GetName.ToLower().Contains("checkpoint"))
+                    door.ServerChangeLock(DoorLockReason.SpecialDoorFeature, true);
             foreach (Pickup pickup in Object.FindObjectsOfType<Pickup>())
                 pickup.Delete();
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Exiled.API.Enums;
 using Exiled.API.Features;
+using Interactables.Interobjects.DoorUtils;
 using MEC;
 using Server = Exiled.Events.Handlers.Server;
 
@@ -114,9 +115,9 @@ namespace TeamDeathmatch
         void SetupMap()
         {
             Warhead.Detonate();
-            foreach (Door door in Map.Doors)
-                if (door.DoorName == "SURFACE_GATE")
-                    door.NetworkisOpen = true;
+            foreach (DoorVariant door in Map.Doors)
+                if (door.GetComponent<DoorNametagExtension>().GetName == "SURFACE_GATE")
+                    door.NetworkTargetState = true;
         }
 
         public void EnableGamemode(float timer, bool force = false)

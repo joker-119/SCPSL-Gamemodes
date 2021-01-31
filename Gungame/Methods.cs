@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Exiled.API.Enums;
 using Exiled.API.Features;
+using Interactables.Interobjects.DoorUtils;
 using MEC;
 using UnityEngine;
 using Server = Exiled.Events.Handlers.Server;
@@ -57,10 +58,10 @@ namespace Gungame
                 if (room.Zone == ZoneType.LightContainment)
                     LczRooms.Add(room);
                 else
-                    foreach (Door door in room.Doors)
+                    foreach (DoorVariant door in room.Doors)
                     {
-                        door.NetworkisOpen = false;
-                        door.Networklocked = true;
+                        door.NetworkTargetState = false;
+                        door.ServerChangeLock(DoorLockReason.SpecialDoorFeature, true);
                     }
         }
 
