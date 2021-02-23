@@ -23,7 +23,7 @@ namespace Outbreak.Commands
         }
 
         public override string Command { get; } = "outbreak";
-        public override string[] Aliases { get; } = {"outbreak"};
+        public override string[] Aliases { get; } = {};
         public override string Description { get; } = string.Empty;
     }
 }

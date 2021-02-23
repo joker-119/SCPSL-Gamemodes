@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using Exiled.API.Features;
@@ -28,17 +29,21 @@ namespace GamemodeManager
         internal void ParseDisabledPlugins()
         {
             foreach (IPlugin<IConfig> plugin in Exiled.Loader.Loader.Plugins)
-                if (DisabledPlugins.Contains(plugin.Name))
+            {
+                Log.Debug($"Checking if {plugin.Name} should be disabled..", Debug);
+                if (DisabledPlugins.Contains(plugin.Name, StringComparison.OrdinalIgnoreCase) || DisabledPlugins.Contains(plugin.Prefix, StringComparison.OrdinalIgnoreCase))
                 {
                     if (plugin.Name == "Gamemode Manager")
                     {
                         Log.Warn($"You cannot set GMM to be disabled when a gamemode is active.");
                         continue;
                     }
-                    
-                    Log.Debug($"Adding {plugin.Name} - {plugin.Version} ({plugin.Author} to disabled plugins list.", Debug);
+
+                    Log.Debug($"Adding {plugin.Name} - {plugin.Version} ({plugin.Author} to disabled plugins list.",
+                        Debug);
                     DisabledPluginsList.Add(plugin);
                 }
+            }
         }
     }
 }

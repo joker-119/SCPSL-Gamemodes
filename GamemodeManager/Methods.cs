@@ -73,11 +73,17 @@ namespace GamemodeManager
         public void DisablePlugins()
         {
             if (plugin.PluginsDisabled)
+            {
+                Log.Debug("Plugins already disabled. Returning.", plugin.Config.Debug);
                 return;
-            
+            }
+
             plugin.PluginsDisabled = true;
             foreach (IPlugin<IConfig> toDisable in plugin.Config.DisabledPluginsList)
+            {
+                Log.Debug($"{toDisable.Name} is being disabled..", plugin.Config.Debug);
                 toDisable.OnDisabled();
+            }
         }
 
         public void EnablePlugins()

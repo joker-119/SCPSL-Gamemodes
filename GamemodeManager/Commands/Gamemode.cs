@@ -25,7 +25,7 @@ namespace GamemodeManager.Commands
         }
 
         public override string Command { get; } = "gamemode";
-        public override string[] Aliases { get; } = { "gamemode" };
+        public override string[] Aliases { get; } = { "gmm" };
         public override string Description { get; } = string.Empty;
     }
 }

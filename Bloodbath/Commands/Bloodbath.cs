@@ -23,7 +23,7 @@ namespace Bloodbath.Commands
         }
 
         public override string Command { get; } = "bloodbath";
-        public override string[] Aliases { get; } = {"bloodbath"};
+        public override string[] Aliases { get; } = {"bbath"};
         public override string Description { get; } = string.Empty;
     }
 }
