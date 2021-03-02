@@ -26,7 +26,7 @@ namespace Blackout
 
         public void OnChangingRole(ChangingRoleEventArgs ev)
         {
-            if (!plugin.IsRunning) return
+            if (!plugin.IsRunning)
             Timing.CallDelayed(1.0f, () => ev.Player.AddItem(ItemType.Flashlight));
         }
 
