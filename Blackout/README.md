@@ -1,4 +1,4 @@
-Outbreak Gamemode
+Blackout Gamemode
 ======
 ## Description
 Most players will spawn normally, as Class-D, Scientists, Guards, etc. However, 1-5 SCP's will spawn of your choice. All the lights are out and everyone gets a free flashlight if they spawn!
