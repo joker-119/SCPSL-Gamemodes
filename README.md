@@ -6,7 +6,7 @@ Each Gamemode is, in and of itself, it's own self-contained plugin, with no extr
 
 ## Gamemodes
  - Bloodbath [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/Bloodbath/#bloodbath-gamemode)]
- - Blackout [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/Blackout/#bloodbath-gamemode)]
+ - Blackout [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/Blackout/#blackout-gamemode)]
  - Dodgeball [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/DodgeBall/#dodgeball-gamemode)]
  - Gungame [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/Gungame/#gungame-gamemode)]
  - HideNSeek [[Info](https://github.com/galaxy119/SCPSL-Gamemodes/tree/main/HideNSeek/#hidenseek-gamemode)]
