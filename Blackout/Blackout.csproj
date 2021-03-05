@@ -7,8 +7,8 @@
     <ProjectGuid>{CC704336-F779-47B6-A645-CA13A2B7FDF5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Outbreak</RootNamespace>
-    <AssemblyName>Outbreak</AssemblyName>
+    <RootNamespace>Blackout</RootNamespace>
+    <AssemblyName>Blackout</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
