@@ -15,7 +15,7 @@ namespace Blackout
 
         public void SetupPlayers()
         {
-            Timing.CallDelayed(1f, () => SpawnScps());
+            Timing.CallDelayed(1.5f, () => SpawnScps());
         }
 
         void SpawnScps()
