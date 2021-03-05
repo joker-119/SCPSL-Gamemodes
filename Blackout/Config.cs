@@ -1,4 +1,5 @@
-﻿using Exiled.API.Interfaces;
+﻿using System.ComponentModel;
+using Exiled.API.Interfaces;
 
 namespace Blackout
 {

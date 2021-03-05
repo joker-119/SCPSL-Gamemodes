@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Exiled.API.Enums;
 using Exiled.API.Features;
 using MEC;
 
@@ -25,7 +26,25 @@ namespace Blackout
                 int r = plugin.Rng.Next(players.Count);
                 players[r].Role = plugin.Config.ScpToSpawn;
                 players.Remove(players[r]);
-            }
+           }
+
+           foreach (Player player in Player.Get(Side.Scp))
+               if (player.Role != plugin.Config.ScpToSpawn)
+                   player.Role = RoleType.ClassD;
+
+           foreach (Player player in Player.List)
+           {
+               bool flag = false;
+               foreach (Inventory.SyncItemInfo item in player.Items)
+                   if (item.id == ItemType.Flashlight)
+                   {
+                       flag = true;
+                       break;
+                   }
+               
+               if (!flag)
+                   player.AddItem(ItemType.Flashlight);
+           }
         }
         
         internal void EventRegistration(bool disable = false)
